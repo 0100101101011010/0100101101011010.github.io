@@ -1,212 +1,535 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+﻿<!---
  
-<!---
+tumblr page by nemurou
  
-you by solarre
-
-inspired by ello
+march 2018
+ 
+TERMS OF USE: https://nemurou.tumblr.com/tou
  
 --->
- 
+
+<!DOCTYPE html>
+<html>
 <head>
-
-<!-- title -->
-<title>kelly zhang / uwaterloo</title>    
-
+<title>kelly zhang</title>
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
 <link rel="shortcut icon" href="{Favicon}">
- 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
-<script>
-(function($){
-$(document).ready(function(){
-$("[title]").style_my_tooltips({
-tip_follows_cursor:true,
-tip_delay_time:1,
-tip_fade_speed:100,
-attribute:"title"
-});
-});
-})(jQuery);
-</script>
 
-<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
- 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900|Nunito+Sans:400,400i,900" rel="stylesheet">
+
 <style type="text/css">
 
-iframe.tmblr-iframe.tmblr-iframe--desktop-loggedin-controls.iframe-controls--desktop, .tmblr-iframe {display:none!important;}
- 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
-.fade-in {
-opacity:0;
--webkit-animation:fadeIn ease-in 1;
--moz-animation:fadeIn ease-in 1;
-animation:fadeIn ease-in 1;
--webkit-animation-fill-mode:forwards;
--moz-animation-fill-mode:forwards;
-animation-fill-mode:forwards;
--webkit-animation-duration:1s;
--moz-animation-duration:1s; animation-duration:1s; }
- 
-.fade-in.one { -webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; animation-delay: 0.7s; }
-.fade-in.two { -webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s; }
- 
-#s-m-t-tooltip {
-    max-width:300px;
-    padding: 5px 8px;
-    margin:10px;
-    background-color:#fff;
-    font-size:12px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    color:#777;
-    border-radius:2px;
-    border:1px solid #f7f7f7;
-    z-index:10000000000000000000000;
-    transition:0.5s ease-in-out;
-    -webkit-transition:0.5s ease-in-out;
-    -moz-transition:0.5s ease-in-out;
-    -ms-transition:0.5s ease-in-out;
-    -o-transition:0.5s ease-in-out;
-    }
-
-body, html {height:100%;width:100%;}
- 
-body {
-    background:#fff url('https://i.gyazo.com/13b660835f8677a48d94d3d89e66e619.jpg') no-repeat center; /*background*/
-    background-size:cover;
-    margin:0px;
-    color:#fff;
-    font:15px 'Karla', calibri;
-    line-height:15px;
-    -moz-font-smoothing:subpixel-antialiased;
-    -webkit-font-smoothing:subpixel-antialiased;
-    font-smoothing:subpixel-antialiased;
+/*tumblr controls by cyantists*/
+iframe.tmblr-iframe {
+    z-index: 99999999999999!important;
+    top: 0!important;
+    right: 0!important;
+    opacity: 0.4;
+    filter: invert(1) contrast(150%);
+    -webkit-filter: invert(1) contrast(150%);
+    -o-filter: invert(1) contrast(150%);
+    -moz-filter: invert(1) contrast(150%);
+    -ms-filter: invert(1) contrast(150%);
+    transform: scale(0.5);
+    transform-origin: 100% 0;
+    -webkit-transform: scale(.7);
+    -webkit-transform-origin: 100% 0;
+    -o-transform: scale(.7);
+    -o-transform-origin: 100% 0;
+    -moz-transform: scale(.7);
+    -moz-transform-origin: 100% 0;
+    -ms-transform: scale(.7);
+    -ms-transform-origin: 100% 0;
 }
- 
+
+#s-m-t-tooltip { 
+    max-width:150px; 
+    background:#eee; /*tooltip background*/
+    padding:1px 6px 2px 6px; 
+    z-index:999; 
+    margin:20px;
+}
+
+body {
+    background:#fff; /*background*/
+    font-family: 'Lato', sans-serif;
+    font-size:13px;
+    line-height:180%;
+    color:#474747; /*font color*/
+    margin:0;
+    padding:0;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+}
+
 a {
     text-decoration:none;
-    color:#eee;/* color of links */
-    border-bottom:1px solid #eee;
-    padding-bottom:2px;
-    -moz-outline-style:none;
-    transition:0.5s ease-in-out;
-    -webkit-transition:0.5s ease-in-out;
-    -moz-transition:0.5s ease-in-out;
-    -ms-transition:0.5s ease-in-out;
-    -o-transition:0.5s ease-in-out;
+    color:#474747; /*link color*/
+}
+
+::-webkit-scrollbar {
+    width:17px;
+    height:17px;
+    background-color:rgb(255,255,255);
+}
+
+::-webkit-scrollbar-track {
+    border:8px solid #fff; /*should be same color as ur bg*/
+    background-color:#aaa; 
+}
+
+::-webkit-scrollbar-thumb {
+    border:8px solid #fff; /*should be same color as ur bg*/
+    background-color:#000; 
+    min-height:24px;
+    min-width:24px;
+}
+
+#content {
+    height:100%;
+    overflow:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:150px auto;
+}
+
+header {
+    width:750px;
+    padding:9px 50px 0px 50px;
+    text-align:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#name {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:900;
+    font-size:43px;
+    color:#474747;/*color of header title*/
+    border-bottom:4px solid #474747; /*header border*/
+    padding:0px 30px 25px 30px;
+}
+
+#links {
+    padding-top:15px;
+}
+
+#links a {
+    display:inline-block;
+    text-transform:uppercase;
+    font-weight:900;
+    margin-left:7px;
+    
+}
+
+#links a:first-of-type {
+    margin-left:0px;
+}
+
+#info {
+    width:750px;
+    margin-top:60px;
+    column-count:2;
+    column-gap:50px;
+    padding:0px 50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.box {
+    width:300px;
+    break-inside:avoid; 
+    display:inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top:50px;
+    
+}
+
+.line {
+    position:relative;
+    width:100%;
+    height:1px;
+    background:#474747;/*color of section label line*/
+    margin-bottom:20px;
+}
+
+.line .label {
+    position:absolute;
+    font-weight:900;
+    font-size:24px;
+    background:#fff;/*should be the same color as your background*/
+    margin-top:-12px;
+    padding-right:10px;
+    color:#474747; /*color of section titles*/
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.text {
+    text-align:justify;
+}
+
+#picture img{
+    width:100%; 
+    -moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius: 8px;
+}
+
+#quote {
+    line-height:200%;
+    font-size:16px;
+    font-style:italic;
+}
+
+#source {
+    font-size:12px;
+    text-align:right;
+    margin-top:10px;
+}
+
+.meter { 
+	height:7px; 
+	position:relative;
+	background:#ddd; /*background color of meter*/
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius:25px;
+	padding:6px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-radius:8px;
+  background-color:#474747; /*this is the color of the meter itself*/
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); /*some fancy shadowing to add a 3dish effect lol*/
+}
+
+.stat {
+    margin-top:30px;
+    text-align:right;
+}
+
+.stat-label {
+    font-weight:900;
+    text-transform:uppercase;
+    margin-bottom:8px;
+    font-size:12px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.testimonial {
+    position:relative;
+    margin-top:35px;
+}
+
+.testimonial-icon {
+    position:absolute;
+    width:100px;
+}
+
+.testimonial-icon img {
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.testimonial-icon:before {
+    content:'“';
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:80px;
+    /*color of quotation marks on top of ur testimonial icon*/
+    color:#474747;
+    position:absolute;
+    margin:20px 0px 0px -5px;
+}
+
+.testimonial-text {
+    margin-left:100px;
+    line-height:130%;
+    font-size:11px;
+    width:200px;
+    max-height:110px;
+    overflow:auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align:justify
+}
+
+.test-user {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:900;
+    font-size:12px;
+    margin-bottom:6px;
+}
+
+table {
+    margin:auto;
+    width:100%;
+    font-size:12px;
+    font-family: 'Nunito Sans', sans-serif;
+    border-collapse: collapse;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
  
-a:hover {color:#fff;border-color:#fff;} /* color of links on hover */
-
-h1 {
-    padding:15px 0;
-    border-bottom:1px solid #ccc;
-    font:lighter 20px 'Karla', calibri;
+th {
+    font-weight:600;
+    vertical-align:top;
+    text-align:left;
+    font-weight:900;
+    width:100px;
+}
+ 
+td {
+    padding-left:15px;
+    text-align:right;
 }
 
-h1:first-child {padding-top:0;margin-top:0;}
-
-p, ul, ol {padding:1px 0 15px;border-bottom:1px solid #bbb;}
-p:last-child {border:none;}
-li {margin-left:30px;line-height:16px;}
-li a {border:none;font-style:italic;}
-
-#black {
-    height:100vh;
-    width:100vw;
-    background:#000;
-    opacity:0.5;
+.phc a{
+    text-align:center;
+    background:#fff;
     position:fixed;
-    z-index:-1;
-}
-
-#photo {
-    width:260px;
-    height:290px;
-    position:fixed;
-    top:calc(50vh - 140px);
-    left:calc(50vw - 300px);
-}
-
-#flb {display:block;margin:25px auto;width:64px;}
-#flb a {padding:5px 9px; border:1px solid #eee;}
-#flb a:hover {background:#fff;color:#777;}
-
-#photo img {
-    width:260px;
-    height:260px;
-    border-radius:100%;
-}
-
-#bio {
-    width:300px;
-    height:auto;
-    position:fixed;
-    top:calc(50vh - 140px);
-    left:50vw;
-}
-
-#links a {line-height:20px;margin-right:10px;}
-
-#credit, #credit a {
-    position:fixed;
-    bottom:20px;
     right:25px;
-    color:#fff;
-    font:normal normal 8px calibri;
-    text-decoration:none;
-    border:none;
+    bottom:25px;
+    font-size:11px;
+    font-family:calibri;
+    color:#000;
+    line-height:100%;
+    z-index:999;
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    padding:5px 8px 6px 8px;
 }
 
-</style></head><body>
 
-<div id="black"></div>    
-<div id="photo" class="box fade-in one">
+</style> </head> <body>
 
-<!-- side image!!! -->
-<img src="/me.jpg"> 
 
-<div id="bio" class="box fade-in two">
 
-<h1>
-<!-- title -->
-kelly zhang
-<br><span style="color:#ddd;font-size:23px;line-height:18px">
-/index.html
-</span></h1>  
-
-<!-- bio, sections separated by <p></p> -->
-
-  <p>hi! welcome to my webpage! i'm a first-year student at the university of waterloo.</p>  
-
-  
+<div id="content">
+<div id="content-txt">
+<header>
+<div id="name">Hey, I'm Kelly!</div>
 <div id="links">
-<h1 style="border:none;padding-bottom:0">projects</h1>
 
-<a href="/flashcards.html">flashcards</a>
-<a href="/uw/wip.html">how to uw</a>
-<a href="/bookmarks.html">bookmarks</a>
-</div>
-<p></p>
-  
 
-<div id="links">
-<h1 style="border:none;padding-bottom:0">where you can find me</h1>
-
+<!---start of header links--->
+<a href="/">refresh</a>
+<a href="/">link two</a>
+<a href="/wip">blog</a>
+<a href="/">resources</a>
 <a href="https://www.linkedin.com/in/kelly-zhang">linkedin</a>
 <a href="https://github.com/0100101101011010">github</a>
-<br>
-<a href="https://en.wikipedia.org/wiki/Jeune_Fille_Endormie">background by pablo picasso</a>
+<a href="/wip">contact</a>
+<!---end of links--->
 </div>
-    
+</header>
+<div id="info">
+
+<div class="box">
+<div class="line"><div class="label">Welcome to my site</div></div>
+<div class="text">
+I'm a first-year student at the University of Waterloo. This website is something I work on in my spare time, with the aim of helping students like me navigate the confusing world of classes, careers, and life!
+<!--end of profile--->
+</div>
 </div>
 
 
-<div id="credit"><a href="http://solarre.tumblr.com" title="solarre">☼</a></div>
-</body> 
+
+<div class="box">
+<div class="line"><div class="label">Stats</div></div>
+<div class="text">
+
+<div class="stat">
+<!--- edit stat label  here --->
+<div class="stat-label">vocals (100%)</div>
+<div class="meter">
+<!-- don't forgot to change pecentage in the width --->
+<span style="width:100%"></span>
+</div>
+<!---end of one stat--->
+</div>
+
+<div class="stat">
+<div class="stat-label">footbag kicking (17%)</div>
+<div class="meter">
+<span style="width:17%"></span>
+</div>
+<!---end of one stat--->
+</div>
+
+<div class="stat">
+<div class="stat-label">pin drop (90%)</div>
+<div class="meter">
+<span style="width:90%"></span>
+</div>
+<!---end of one stat--->
+</div>
+
+<div class="stat">
+<div class="stat-label">rap legend hong jisoo (75%)</div>
+<div class="meter">
+<span style="width:75%"></span>
+</div>
+<!---end of one stat--->
+</div>
+
+<div class="stat">
+<div class="stat-label">ping pong (80%)</div>
+<div class="meter">
+<span style="width:80%"></span>
+</div>
+<!---end of one stat--->
+</div>
+
+<!--end of stat--->
+</div>
+</div>
+
+
+<div class="box">
+<div class="line"><div class="label">Longing for life</div></div>
+<div id="quote">
+I have a longing for life, and I go on living in spite of logic. Though I may not believe in the order of the universe, yet I love the sticky little leaves as they open in spring. I love the blue sky, I love some people, whom one loves you know sometimes without knowing why. I love some great deeds done by men, though I've long ceased perhaps to have faith in them, yet from old habit one's heart prizes them.
+<div id="source">
+&mdash; Fyodor Dostoevsky, "The Brothers Karamazov"
+<!---end of source--->
+</div>
+<!--end of motto--->
+</div>
+</div>
+
+
+<div class="box">
+<div id="picture">
+<!--- picture is 300px, will resize automatically ---> 
+<img src="/me.jpg">
+<!--end of picture--->
+</div>
+</div>
+ 
+
+<div class="box">
+<div class="line"><div class="label">Info</div></div>
+
+<table>
+
+<!--- one info --->
+<tr>
+<th>Program</th>
+<td>Biotechnology/CPA</td>
+</tr>
+<!--- end of one info --->
+ 
+<tr>
+<th>Hometown</th>
+<td>Calgary, Alberta</td>
+</tr>
+ 
+<tr>
+<th>Date of Birth</th>
+<td>December 30, 1995</td>
+</tr>
+ 
+<tr>
+<th>Hometown</th>
+<td>Los Angeles, California</td>
+</tr>
+
+<tr>
+<th>Specialty</th>
+<td>Singing, Playing the guitar</td>
+</tr>
+
+<tr>
+<th>Hobbies</th>
+<td>Reading, Guitar, Singing, Movies</td>
+</tr>
+
+<tr>
+<th>Training Period</th>
+<td>2 years and 2 months</td>
+</tr>
+
+
+<!---end of info section--->
+</table>
+
+
+</div>
+
+
+<div class="box">
+<div class="line"><div class="label">Shameless Promotions</div></div>
+
+<!---start of one testimonial--->
+<div class="testimonial">
+<div class="testimonial-icon">
+<!--- change testimonial icon here, img should be a square, 80px--->
+<!--- replace the / (slash) placeholder with the link to ur attestant's blog. if you don't want to link anyone just remove the <a href="/"> and the </a> ---> 
+<a href="/"><img src="https://static.tumblr.com/ukg9sji/X7dp5ckz5/hansol.png"></a>
+</div>
+<div class="testimonial-text">
+<!---edit testimonial name here--->
+<div class="test-user">Personal Projects</div>
+<a href="https://500px.com/vcg-calgarytea">My mom's photography page</a>. She's an incredibly dedicated and talented amateur photographer (not sure if I should even be using "amateur" at this point). Check it out!<br>
+</div>
+</div>
+<!---end of one testimonial--->
+
+<!---start of one testimonial--->
+<div class="testimonial">
+<div class="testimonial-icon">
+<img src="https://static.tumblr.com/ukg9sji/SAdp5cl0l/jeonghan.png"></div>
+<div class="testimonial-text">
+<div class="test-user">School Initiatives</div>
+<a href="https://www.uwsimracing.com/">UW Sim Racing Club</a>. The first club on campus dedicated to simulation racing games! We focus on iRacing and Assetto Corsa, but players of all racing games and all levels are welcome to join!<br>
+<a href="https://uwaffle.wordpress.com/">uWAFFLE</a>, short for University of Waterloo Association For Food Lovers Everywhere. We hold events throughout the year dedicated to eating food together.<br>
+<a href="http://volunteer.feds.ca/index.php">FEDS Volunteer Centre</a>. Want to help out in the community, or get a sweet position to put on your resume? We can help with that. Check out our <a href="https://www.facebook.com/FedsVolunteerCentre">FB page</a>, or even message me directly if you want help finding an experience that suits you.
+</div>
+</div>
+<!---end of one testimonial--->
+
+<!---end of testimonial section--->
+</div>
+
+
+
+
+
+
+
+
+<!---end of info--->
+</div>
+
+
+
+
+
+
+<!---end of content txt--->
+</div>
+<!---end of content--->
+</div>
+  
+
 </html>
+
+<span class="phc"><a href="http://nemurou.tumblr.com/">theme by<br><b>nemurou</b></a></span>
