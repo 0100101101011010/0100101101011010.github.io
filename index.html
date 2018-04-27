@@ -1,16 +1,16 @@
 ﻿<!---
- 
+
 tumblr page by nemurou
- 
+
 march 2018
- 
+
 TERMS OF USE: https://nemurou.tumblr.com/tou
- 
+
 --->
 
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+
 <head>
 <title>kelly zhang / uwaterloo</title>
 <link rel="alternate" type="application/rss+xml" href="{RSS}">
@@ -18,337 +18,41 @@ TERMS OF USE: https://nemurou.tumblr.com/tou
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900|Nunito+Sans:400,400i,900" rel="stylesheet">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Muli" rel="stylesheet">
 
 <style type="text/css">
 
-/*tumblr controls by cyantists*/
-iframe.tmblr-iframe {
-    z-index: 99999999999999!important;
-    top: 0!important;
-    right: 0!important;
-    opacity: 0.4;
-    filter: invert(1) contrast(150%);
-    -webkit-filter: invert(1) contrast(150%);
-    -o-filter: invert(1) contrast(150%);
-    -moz-filter: invert(1) contrast(150%);
-    -ms-filter: invert(1) contrast(150%);
-    transform: scale(0.5);
-    transform-origin: 100% 0;
-    -webkit-transform: scale(.7);
-    -webkit-transform-origin: 100% 0;
-    -o-transform: scale(.7);
-    -o-transform-origin: 100% 0;
-    -moz-transform: scale(.7);
-    -moz-transform-origin: 100% 0;
-    -ms-transform: scale(.7);
-    -ms-transform-origin: 100% 0;
+h2 {
+  font-family: Montserrat, monospace;
 }
 
-#s-m-t-tooltip { 
-    max-width:150px; 
-    background:#eee; /*tooltip background*/
-    padding:1px 6px 2px 6px; 
-    z-index:999; 
-    margin:20px;
+p {
+  font-family: Muli, monospace;
 }
 
-body {
-    background:#fff; /*background*/
-    font-family: 'Lato', sans-serif;
-    font-size:13px;
-    line-height:180%;
-    color:#474747; /*font color*/
-    margin:0;
-    padding:0;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
-}
+</style>
+</head>
 
-a {
-    text-decoration:none;
-    color:#474747; /*link color*/
-}
+<body>
 
-::-webkit-scrollbar {
-    width:17px;
-    height:17px;
-    background-color:rgb(255,255,255);
-}
+<h2 class="text-primary">Hey, I'm Kelly!</h2>
 
-::-webkit-scrollbar-track {
-    border:8px solid #fff; /*should be same color as ur bg*/
-    background-color:#aaa; 
-}
+<div class="row">Links
 
-::-webkit-scrollbar-thumb {
-    border:8px solid #fff; /*should be same color as ur bg*/
-    background-color:#000; 
-    min-height:24px;
-    min-width:24px;
-}
-
-#content {
-    height:100%;
-    overflow:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:150px auto;
-}
-
-header {
-    width:750px;
-    padding:9px 50px 0px 50px;
-    text-align:center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-#name {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight:900;
-    font-size:43px;
-    color:#474747;/*color of header title*/
-    border-bottom:4px solid #474747; /*header border*/
-    padding:0px 30px 25px 30px;
-}
-
-#links {
-    padding-top:15px;
-}
-
-#links a {
-    display:inline-block;
-    text-transform:uppercase;
-    font-weight:900;
-    margin-left:7px;
-    
-}
-
-#links a:first-of-type {
-    margin-left:0px;
-}
-
-#info {
-    width:750px;
-    margin-top:60px;
-    column-count:2;
-    column-gap:50px;
-    padding:0px 50px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.box {
-    width:300px;
-    break-inside:avoid; 
-    display:inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top:50px;
-    
-}
-
-.line {
-    position:relative;
-    width:100%;
-    height:1px;
-    background:#474747;/*color of section label line*/
-    margin-bottom:20px;
-}
-
-.line .label {
-    position:absolute;
-    font-weight:900;
-    font-size:24px;
-    background:#fff;/*should be the same color as your background*/
-    margin-top:-12px;
-    padding-right:10px;
-    color:#474747; /*color of section titles*/
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.text {
-    text-align:justify;
-}
-
-#picture img{
-    width:100%; 
-    -moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius: 8px;
-}
-
-#quote {
-    line-height:200%;
-    font-size:16px;
-    font-style:italic;
-}
-
-#source {
-    font-size:12px;
-    text-align:right;
-    margin-top:10px;
-}
-
-.meter { 
-	height:7px; 
-	position:relative;
-	background:#ddd; /*background color of meter*/
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius:25px;
-	padding:6px;
-}
-
-.meter > span {
-  display: block;
-  height: 100%;
-  border-radius:8px;
-  background-color:#474747; /*this is the color of the meter itself*/
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); /*some fancy shadowing to add a 3dish effect lol*/
-}
-
-.stat {
-    margin-top:30px;
-    text-align:right;
-}
-
-.stat-label {
-    font-weight:900;
-    text-transform:uppercase;
-    margin-bottom:8px;
-    font-size:12px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.testimonial {
-    position:relative;
-    margin-top:35px;
-}
-
-.testimonial-icon {
-    position:absolute;
-    width:100px;
-}
-
-.testimonial-icon img {
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-}
-
-.testimonial-icon:before {
-    content:'“';
-    font-family: 'Nunito Sans', sans-serif;
-    font-size:80px;
-    /*color of quotation marks on top of ur testimonial icon*/
-    color:#474747;
-    position:absolute;
-    margin:20px 0px 0px -5px;
-}
-
-.testimonial-text {
-    margin-left:100px;
-    line-height:130%;
-    font-size:11px;
-    width:200px;
-    max-height:110px;
-    overflow:auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align:justify
-}
-
-.test-user {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight:900;
-    font-size:12px;
-    margin-bottom:6px;
-}
-
-table {
-    margin:auto;
-    width:100%;
-    font-size:12px;
-    font-family: 'Nunito Sans', sans-serif;
-    border-collapse: collapse;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
- 
-th {
-    font-weight:600;
-    vertical-align:top;
-    text-align:left;
-    font-weight:900;
-    width:100px;
-}
- 
-td {
-    padding-left:15px;
-    text-align:right;
-}
-
-.phc a{
-    text-align:center;
-    background:#fff;
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    font-size:11px;
-    font-family:calibri;
-    color:#000;
-    line-height:100%;
-    z-index:999;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    padding:5px 8px 6px 8px;
-}
-
-
-</style> </head> <body>
-
-
-
-<div id="content">
-<div id="content-txt">
-<header>
-<div id="name">Hey, I'm Kelly!</div>
-<div id="links">
-
-
-<!---start of header links--->
 <a href="/">refresh</a>
 <a href="/wip">blog</a>
 <a href="/">resources</a>
 <a href="https://www.linkedin.com/in/kelly-zhang">linkedin</a>
 <a href="https://github.com/0100101101011010">github</a>
 <a href="/wip">contact</a>
-<!---end of links--->
 </div>
-</header>
-<div id="info">
 
-<div class="box">
-<div class="line"><div class="label">Welcome to my site</div></div>
-<div class="text">
-I'm a first-year student at the University of Waterloo. This website is something I work on in my spare time, with the aim of helping students like me navigate the confusing world of classes, careers, and life!
-<!--end of profile--->
-</div>
-</div>
+
+<p>I'm a first-year student at the University of Waterloo. This website is
+  something I work on in my spare time, with the aim of helping students like
+  me navigate the confusing world of classes, careers, and life!
+</p>
 
 
 
@@ -406,12 +110,12 @@ I have a longing for life, and I go on living in spite of logic. Though I may no
 
 <div class="box">
 <div id="picture">
-<!--- picture is 300px, will resize automatically ---> 
+<!--- picture is 300px, will resize automatically --->
 <img src="/me.jpg">
 <!--end of picture--->
 </div>
 </div>
- 
+
 
 <div class="box">
 <div class="line"><div class="label">Info</div></div>
@@ -422,12 +126,12 @@ I have a longing for life, and I go on living in spite of logic. Though I may no
 <th>Program</th>
 <td>Biotechnology/CPA</td>
 </tr>
- 
+
 <tr>
 <th>Hometown</th>
 <td>Calgary, Alberta</td>
 </tr>
- 
+
 <tr>
 <th>Coffee or Tea</th>
 <td>(Bubble) Tea</td>
@@ -522,7 +226,7 @@ Want to help out in the community, or get a sweet position to put on your resume
 </div>
 <!---end of content--->
 </div>
-  
+
 
 </html>
 
