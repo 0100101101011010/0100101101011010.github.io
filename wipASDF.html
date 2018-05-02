@@ -1,529 +1,548 @@
-<!---
-
-tumblr page by nemurou
-
-march 2018
-
-TERMS OF USE: https://nemurou.tumblr.com/tou
-
---->
-
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 <head>
-<title>kelly zhang / uwaterloo</title>
-<link rel="alternate" type="application/rss+xml" href="{RSS}">
-<link rel="shortcut icon" href="{Favicon}">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!---okay guys dont steal, theme by amywiiliams prev. clarascapaldis, you know the drill, instructions are in the code, okay enjoy--->
 
-<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900|Nunito+Sans:400,400i,900" rel="stylesheet">
+    <title>HOW TO UW: a guide to your first year at uwaterloo</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
 
-<style type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-/*tumblr controls by cyantists*/
-iframe.tmblr-iframe {
-    z-index: 99999999999999!important;
-    top: 0!important;
-    right: 0!important;
-    opacity: 0.4;
-    filter: invert(1) contrast(150%);
-    -webkit-filter: invert(1) contrast(150%);
-    -o-filter: invert(1) contrast(150%);
-    -moz-filter: invert(1) contrast(150%);
-    -ms-filter: invert(1) contrast(150%);
-    transform: scale(0.5);
-    transform-origin: 100% 0;
-    -webkit-transform: scale(.7);
-    -webkit-transform-origin: 100% 0;
-    -o-transform: scale(.7);
-    -o-transform-origin: 100% 0;
-    -moz-transform: scale(.7);
-    -moz-transform-origin: 100% 0;
-    -ms-transform: scale(.7);
-    -ms-transform-origin: 100% 0;
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+
+(function($){
+
+$(document).ready(function(){
+
+$("a[title]").style_my_tooltips({
+
+tip_follows_cursor:true,
+
+tip_delay_time:100,
+
+tip_fade_speed:300,
+
+attribute:"title"
+
+});
+
+});
+
+})(jQuery);
+
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+  $(".t1, .close1").click(function(){
+if ($( ".b.one" ).hasClass( "big" )) {
+  setTimeout(function() {
+    $('.four, .two, .three').toggleClass('small');
+     }, 700);
+  setTimeout(function() {
+    $('.b.one').toggleClass('big');
+    $('.t1').fadeToggle(300);
+     }, 400);
+    $('.stuff').fadeToggle(300);
+} else {
+  setTimeout(function() {
+    $('.b.one').toggleClass('big');
+     }, 200);
+  setTimeout(function() {
+    $('.stuff').fadeToggle(300);
+     }, 600);
+    $('.four, .two, .three').toggleClass('small');
+    $('.t1').fadeToggle(300);
+}
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".t2, .close2").click(function(){
+if ($( ".b.two" ).hasClass( "big" )) {
+  setTimeout(function() {
+    $('.four, .one, .three').toggleClass('small');
+     }, 700);
+  setTimeout(function() {
+    $('.b.two').toggleClass('big');
+    $('.t2').fadeToggle(300);
+     }, 400);
+    $('.stuff').fadeToggle(300);
+} else {
+  setTimeout(function() {
+    $('.b.two').toggleClass('big');
+     }, 200);
+  setTimeout(function() {
+    $('.stuff').fadeToggle(300);
+     }, 600);
+    $('.four, .one, .three').toggleClass('small');
+    $('.t2').fadeToggle(300);
+}
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".t3, .close3").click(function(){
+if ($( ".b.three" ).hasClass( "big" )) {
+  setTimeout(function() {
+    $('.four, .two, .one').toggleClass('small');
+     }, 700);
+  setTimeout(function() {
+    $('.b.three').toggleClass('big');
+    $('.t3').fadeToggle(300);
+     }, 400);
+    $('.stuff').fadeToggle(300);
+} else {
+  setTimeout(function() {
+    $('.b.three').toggleClass('big');
+     }, 200);
+  setTimeout(function() {
+    $('.stuff').fadeToggle(300);
+     }, 400);
+    $('.four, .two, .one').toggleClass('small');
+    $('.t3').fadeToggle(300);
+}
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".t4, .close4").click(function(){
+if ($( ".b.four" ).hasClass( "big" )) {
+  setTimeout(function() {
+    $('.one, .two, .three').toggleClass('small');
+     }, 700);
+  setTimeout(function() {
+    $('.b.four').toggleClass('big');
+    $('.t4').fadeToggle(300);
+     }, 400);
+    $('.stuff').fadeToggle(300);
+} else {
+  setTimeout(function() {
+    $('.b.four').toggleClass('big');
+     }, 200);
+  setTimeout(function() {
+    $('.stuff').fadeToggle(300);
+     }, 600);
+    $('.one, .two, .three').toggleClass('small');
+    $('.t4').fadeToggle(300);
+}
+  });
+});
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style type="text/css">
+
+.b.one.big, .b.two.big, .b.three.big, .b.four.big {
+    width:510px;
+    height:510px;
+    background:#eee; /*background of the tabs after they expand*/
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.b.one.big {
+    left:0;
+    top:0;
+}
+
+.b.two.big {
+    right:0;
+    top:0;
+}
+
+.b.three.big {
+    left:0;
+    bottom:0;
+}
+
+.b.four.big {
+    right:0;
+    bottom:0;
+}
+
+.b.small {
+-webkit-transform:scale(0);
+-moz-transform:scale(0);
+-o-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0);
 }
 
 #s-m-t-tooltip {
     max-width:150px;
-    background:#eee; /*tooltip background*/
-    padding:1px 6px 2px 6px;
-    z-index:999;
-    margin:20px;
+    padding:5px 8px;
+    margin:20px 14px 7px 10px;
+    background-color:#fff;
+    font-family:Calibri;
+    font-size:10px;
+    line-height:11px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    border:1px solid #777;
+    z-index:99999999;
+}
+
+::-webkit-scrollbar {
+    height:3px;
+    width:2px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555; /*scrollbar color*/
+    height:auto;
+    border-bottom:none;
+}
+
+::selection {
+    background-color: #000;
+    color: #fff;
 }
 
 body {
-    background:#fff; /*background*/
-    font-family: 'Lato', sans-serif;
-    font-size:13px;
-    line-height:180%;
-    color:#474747; /*font color*/
-    margin:0;
-    padding:0;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
-    font-smoothing:antialiased;
+    background-color: #f7f7f7; /*change whole page background color*/
+    font-family:arial;
+    color:#777;
 }
 
 a {
     text-decoration:none;
-    color:#474747; /*link color*/
+    color:#bbb; /*color of link*/
 }
 
-::-webkit-scrollbar {
-    width:17px;
-    height:17px;
-    background-color:rgb(255,255,255);
+a:hover {
+    color:#777; /*color of hovered link*/
 }
 
-::-webkit-scrollbar-track {
-    border:8px solid #fff; /*should be same color as ur bg*/
-    background-color:#aaa;
+b {
+    color:#555; /*color of bolded text*/
 }
 
-::-webkit-scrollbar-thumb {
-    border:8px solid #fff; /*should be same color as ur bg*/
-    background-color:#000;
-    min-height:24px;
-    min-width:24px;
-}
-
-#content {
-    height:100%;
-    overflow:auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:150px auto;
-}
-
-header {
-    width:750px;
-    padding:9px 50px 0px 50px;
-    text-align:center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-#name {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight:900;
-    font-size:43px;
-    color:#474747;/*color of header title*/
-    border-bottom:4px solid #474747; /*header border*/
-    padding:0px 30px 25px 30px;
-}
-
-#links {
-    padding-top:15px;
-}
-
-#links a {
-    display:inline-block;
-    text-transform:uppercase;
-    font-weight:900;
-    margin-left:7px;
-
-}
-
-#links a:first-of-type {
-    margin-left:0px;
-}
-
-#info {
-    width:750px;
-    margin-top:60px;
-    column-count:2;
-    column-gap:50px;
-    padding:0px 50px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.box {
-    width:300px;
-    break-inside:avoid;
-    display:inline-block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top:50px;
-
-}
-
-.line {
-    position:relative;
-    width:100%;
-    height:1px;
-    background:#474747;/*color of section label line*/
-    margin-bottom:20px;
-}
-
-.line .label {
-    position:absolute;
-    font-weight:900;
-    font-size:24px;
-    background:#fff;/*should be the same color as your background*/
-    margin-top:-12px;
-    padding-right:10px;
-    color:#474747; /*color of section titles*/
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.text {
-    text-align:justify;
-}
-
-#picture img{
-    width:100%;
-    -moz-border-radius:8px;
-	-webkit-border-radius:8px;
-	border-radius: 8px;
-}
-
-#quote {
-    line-height:200%;
-    font-size:16px;
-    font-style:italic;
-}
-
-#source {
-    font-size:12px;
-    text-align:right;
-    margin-top:10px;
-}
-
-.meter {
-	height:7px;
-	position:relative;
-	background:#ddd; /*background color of meter*/
-	-moz-border-radius: 25px;
-	-webkit-border-radius: 25px;
-	border-radius:25px;
-	padding:6px;
-}
-
-.meter > span {
-  display: block;
-  height: 100%;
-  border-radius:8px;
-  background-color:#474747; /*this is the color of the meter itself*/
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 2px 9px  rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4); /*some fancy shadowing to add a 3dish effect lol*/
-}
-
-.stat {
-    margin-top:30px;
-    text-align:right;
-}
-
-.stat-label {
-    font-weight:900;
-    text-transform:uppercase;
-    margin-bottom:8px;
-    font-size:12px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.testimonial {
-    position:relative;
-    margin-top:35px;
-}
-
-.testimonial-icon {
-    position:absolute;
-    width:100px;
-}
-
-.testimonial-icon img {
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-}
-
-.testimonial-icon:before {
-    content:'“';
-    font-family: 'Nunito Sans', sans-serif;
-    font-size:80px;
-    /*color of quotation marks on top of ur testimonial icon*/
-    color:#474747;
-    position:absolute;
-    margin:20px 0px 0px -5px;
-}
-
-.testimonial-text {
-    margin-left:100px;
-    line-height:130%;
-    font-size:11px;
-    width:200px;
-    max-height:110px;
-    overflow:auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align:justify
-}
-
-.test-user {
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight:900;
-    font-size:12px;
-    margin-bottom:6px;
-}
-
-table {
-    margin:auto;
-    width:100%;
-    font-size:12px;
-    font-family: 'Nunito Sans', sans-serif;
-    border-collapse: collapse;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-th {
-    font-weight:600;
-    vertical-align:top;
-    text-align:left;
-    font-weight:900;
-    width:100px;
-}
-
-td {
-    padding-left:15px;
-    text-align:right;
-}
-
-.phc a{
-    text-align:center;
-    background:#fff;
+.con {
+    background:#fff; /*change color of the borders around the four squares*/
+    width:510px;
+    height:510px;
     position:fixed;
-    right:25px;
-    bottom:25px;
-    font-size:11px;
-    font-family:calibri;
-    color:#000;
-    line-height:100%;
-    z-index:999;
-    border-radius:4px;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    padding:5px 8px 6px 8px;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
+.b {
+    width:230px;
+    height:230px;
+    background-color: #f7f7f7; /*change background of the tabs before they are expanded */
+    position:absolute;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
 
-</style> </head> <body>
+.b:hover {
+    background:#f1f1f1; /*change tabs background color on hover*/
+}
+
+.b.one {
+    top:15px;
+    left:15px;
+}
+
+.b.two {
+    top:15px;
+    right:15px;
+}
+
+.b.three {
+    bottom:15px;
+    left:15px;
+}
+
+.b.four {
+    bottom:15px;
+    right:15px;
+}
+
+.top {
+    background:#aaa; /*change background color of the top bar where the close button is*/
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    padding:8px;
+}
+
+.t {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    text-align:center;
+    padding:100px 0px;
+    letter-spacing:3px;
+    font-size:30px;
+    font-weight:300;
+    font-family:'Raleway', sans-serif;
+    text-transform:uppercase;
+    cursor:pointer;
+}
+
+.stuff {
+    display:none;
+}
+
+.top a {
+    padding:5px;
+    font-size:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#fff; /*change color of close button*/
+    float:right;
+    border:2px solid #fff; /*change color of close button border*/
+}
+
+.side {
+    position:absolute;
+    top:60px;
+    bottom:15px;
+    width:170px;
+    right:15px;
+}
+
+.side img {
+    width:120px;
+    margin-bottom:5px;
+    height:120px;
+    padding:25px;
+    background:#fff;
+}
+
+.q {
+    padding:15px;
+    background:#fff; /*change content background*/
+    font-size:10px;
+    margin-bottom:6px;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.content, .ccontent {
+    position:absolute;
+    top:60px;
+    bottom:15px;
+    overflow:auto;
+    padding:15px;
+    box-sizing:border-box;
+    left:15px;
+    width:300px;
+    text-transform:uppercase;
+    font-size:11px;
+    line-height:180%;
+    letter-spacing:1px;
+    background:#fff; /*change content background*/
+}
+
+.ccontent {
+    right:15px;
+    width:auto;
+}
+
+.tt {
+    font-size:15px;
+    letter-spacing:2px;
+    margin:10px 0px;
+    color:#555; /*change tags title text color*/
+}
+
+.c1 a {
+    padding:1px 5px;
+    display:inline-block;
+    width:90px;
+    margin:5px 3px;
+    color:#666; /*change tags text color*/
+    border:1px solid #bbb; /*change tags border color*/
+}
+
+.c1 a:hover {
+    border-bottom:1px solid #777; /*change tags border hover color*/
+}
+
+.links {
+    position:absolute;
+    bottom:-20px;
+    text-align:right;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:10px;
+    left:10px;
+    right:10px;
+}
+
+.links a {
+    margin:0px 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="con">
+
+    <div class="b one">
+        <div class="t t1">about</div>
+        <div class="stuff">
+            <div class="top">
+                <a href="javascript:;" class="close1">close</a>
+            </div>
+            <div class="side">
+                <!---about image--->
+                <img src="https://33.media.tumblr.com/e93b7a69c5f84cda6159ca4df28b3b34/tumblr_ngyempsyr11u692uio5_250.png">
+                <!---end about image--->
+
+                <div class="q">
+                <!---quote--->
+                here is a quote about something you fancy
+                </div>
+
+                <!---change these accordingly--->
+                <div class="q">name: steph</div>
+                <div class="q">age: fourteen</div>
+                <div class="q">location: canada</div>
+
+            </div>
+            <div class="content">
+
+            <!---description--->
+                <p><b>bold</b> <i>italic</i> <u>underline</u> <a href="/">link</a>. remember to wrap each paragraph in  < p > and < /p > tags!!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at quam tellus. Nullam interdum ligula ac malesuada accumsan. Proin cursus rhoncus fringilla. Phasellus eget mauris lectus. Sed egestas porta libero, vel sollicitudin urna porttitor nec. Quisque eget nisi vel nulla maximus interdum a quis dolor. Morbi eget eros risus. Donec id leo ut justo mollis consequat a id est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at quam tellus. Nullam interdum ligula ac malesuada accumsan. Proin cursus rhoncus fringilla. Phasellus eget mauris lectus. Sed egestas porta libero, vel sollicitudin urna porttitor nec. Quisque eget nisi vel nulla maximus interdum a quis dolor. Morbi eget eros risus. Donec id leo ut justo mollis consequat a id est.</p>
+            <!--end description--->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b two">
+        <div class="t t2">tags</div>
+        <div class="stuff">
+            <div class="top">
+                <a href="javascript:;" class="close2">close</a>
+            </div>
+            <div class="ccontent c1">
+
+                <!---copy and paste from here--->
+                <div class="tt">tags title</div>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <!---to here to add a new tags section--->
+
+                <div class="tt">tags title</div>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+
+                <div class="tt">tags title</div>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+                <a href="/">tag</a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b three">
+        <div class="t t3">faq + ask</div>
+        <div class="stuff">
+            <div class="top">
+                <a href="javascript:;" class="close3">close</a>
+            </div>
+            <div class="ccontent" style="text-align:center">
+                here is where you put your faq.
+                <!---question--->
+                <p><b>Questions about life and the depth of our reality?</b> Answers that somewhat satisfy your curiosity.</p>
+                <!---end question. remember to wrap each q&a in <p> and </p> tags, and wrap each question in <b> and </b> tags like shown above.--->
+
+                <p><b>Question?</b> Answers.</p>
+                <p><b>There are more questions?</b> There are more answers.</p>
+
+
+                <!---ask box (remember to change YOURURLHERE to your actual url or it won't work!)--->
+<iframe frameborder="0" scrolling="no" width="100%" height="190" src="http://www.tumblr.com/ask_form/YOURURLHERE.tumblr.com" style="overflow:auto; margin-top:10px" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b four">
+        <div class="t t4">blogroll</div>
+        <div class="stuff">
+            <div class="top">
+                <a href="javascript:;" class="close4">close</a>
+            </div>
+            <div class="ccontent" style="text-align:center">
+                        {block:Following}{block:Followed}
+       <div style="display:inline-block; margin:7px" class="following">
+       <a target="_blank" href='{FollowedURL}' title='{FollowedName}'><img src='{FollowedPortraitURL-40}'></a>
+       </div>
+       {block:Followed}{/block:Following}
+            </div>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="/" style="float:left">back</a>
+        <a href="http://tumblr.com/dashboard">dash</a>
+        <!---here are your two custom links, feel free to add more if ya feel like it--->
+        <a href="/">one</a>
+        <a href="/">two</a>
+        <!---do not remove or I swear i will fucking shank you--->
+        <a href="http://gloriousponds.co.vu" title="amywiiliams">©</a>
+    </div>
 
 
 
-<div id="content">
-<div id="content-txt">
-<header>
-<div id="name">Hey, I'm Kelly!</div>
-<div id="links">
 
-
-<!---start of header links--->
-<a href="/">refresh</a>
-<a href="/wip">blog</a>
-<a href="/">resources</a>
-<a href="https://www.linkedin.com/in/kelly-zhang">linkedin</a>
-<a href="https://github.com/0100101101011010">github</a>
-<a href="/wip">contact</a>
-<!---end of links--->
 </div>
-</header>
-<div id="info">
-
-<div class="box">
-<div class="line"><div class="label">Welcome to my site</div></div>
-<div class="text">
-I'm a first-year student at the University of Waterloo. This website is something I work on in my spare time, with the aim of helping students like me navigate the confusing world of classes, careers, and life!
-<!--end of profile--->
-</div>
-</div>
-
-
-
-<div class="box">
-<div class="line"><div class="label">Talents</div></div>
-<div class="text">
-
-<div class="stat">
-<div class="stat-label">basketball (55%)</div>
-<div class="meter">
-<span style="width:55%"></span>
-</div>
-<!---end of one stat--->
-
-<div class="stat">
-<div class="stat-label">knitting (45%)</div>
-<div class="meter">
-<span style="width:45%"></span>
-</div>
-<!---end of one stat--->
-
-<div class="stat">
-<div class="stat-label">ping-pong (60%)</div>
-<div class="meter">
-<span style="width:60%"></span>
-</div>
-<!---end of one stat--->
-</div>
-
-<div class="stat">
-<div class="stat-label">any other pong (20%)</div>
-<div class="meter">
-<span style="width:20%"></span>
-</div>
-<!---end of one stat--->
-</div>
-
-<!--end of stat--->
-</div>
-</div>
-
-
-<div class="box">
-<div class="line"><div class="label">Longing for life</div></div>
-<div id="quote">
-I have a longing for life, and I go on living in spite of logic. Though I may not believe in the order of the universe, yet I love the sticky little leaves as they open in spring. I love the blue sky, I love some people, whom one loves you know sometimes without knowing why. I love some great deeds done by men, though I've long ceased perhaps to have faith in them, yet from old habit one's heart prizes them.
-<div id="source">
-&mdash; Fyodor Dostoevsky, "The Brothers Karamazov"
-<!---end of source--->
-</div>
-<!--end of motto--->
-</div>
-</div>
-
-
-<div class="box">
-<div id="picture">
-<!--- picture is 300px, will resize automatically --->
-<img src="/me.jpg">
-<!--end of picture--->
-</div>
-</div>
-
-
-<div class="box">
-<div class="line"><div class="label">Info</div></div>
-
-<table>
-
-<tr>
-<th>Program</th>
-<td>Biotechnology/CPA</td>
-</tr>
-
-<tr>
-<th>Hometown</th>
-<td>Calgary, Alberta</td>
-</tr>
-
-<tr>
-<th>Coffee or Tea</th>
-<td>(Bubble) Tea</td>
-</tr>
-
-<tr>
-<th>Favourite NBA Player</th>
-<td>DeMar DeRozan</td>
-</tr>
-
-<tr>
-<th>Favourite Vegetable</th>
-<td>Spinach</td>
-</tr>
-
-
-<!---end of info section--->
-</table>
-
-
-</div>
-
-
-<div class="box">
-<div class="line"><div class="label">Shameless Promotions</div></div>
-
-<!---start of one testimonial--->
-<div class="testimonial">
-<div class="testimonial-icon">
-<a href="https://500px.com/vcg-calgarytea"><img src="/thumbs/fywphotography.png"></a>
-</div>
-<div class="testimonial-text">
-<!---edit testimonial name here--->
-<div class="test-user">FYW Photography</div>
-My mom's photography page. She's an incredibly dedicated and talented amateur photographer (not sure if I should even be using "amateur" at this point). Check it out!<br>
-</div>
-</div>
-<!---end of one testimonial--->
-
-<!---start of one testimonial--->
-<div class="testimonial">
-<div class="testimonial-icon">
-<a href="https://www.uwsimracing.com/"><img src="/thumbs/uwsimracing.png"></div></a>
-<div class="testimonial-text">
-<div class="test-user">UW Sim Racing Club</div>
-The first club on campus dedicated to simulation racing games! We focus on iRacing and Assetto Corsa, but players of all racing games and all levels are welcome to join!
-</div>
-</div>
-<!---end of one testimonial--->
-
-<!---start of one testimonial--->
-<div class="testimonial">
-<div class="testimonial-icon">
-<a href="https://uwaffle.wordpress.com/"><img src="https://scontent.fyyc3-1.fna.fbcdn.net/v/t1.0-1/p480x480/1511433_1620699174817206_2307966485533545382_n.png?_nc_cat=0&oh=be8be59acb712865ae5dedb1695da732&oe=5B9B590A"></div></a>
-<div class="testimonial-text">
-<div class="test-user">uWAFFLE</div>
-Short for University of Waterloo Association For Food Lovers Everywhere, we hold events throughout the year dedicated to eating food together.
-</div>
-</div>
-<!---end of one testimonial--->
-
-<!---start of one testimonial--->
-<div class="testimonial">
-<div class="testimonial-icon">
-<a href="http://volunteer.feds.ca/index.php"><img src="http://volunteer.feds.ca/uw/design/VC_logo.jpg"></div></a>
-<div class="testimonial-text">
-<div class="test-user">FEDS Volunteer Centre</div>
-Want to help out in the community, or get a sweet position to put on your resume? We can help with that. Check out our <a href="https://www.facebook.com/FedsVolunteerCentre">FB page</a>, or even message me directly if you want help finding an experience that suits you.
-</div>
-</div>
-<!---end of one testimonial--->
-
-<!---end of testimonial section--->
-</div>
 
 
 
 
-
-
-
-
-<!---end of info--->
-</div>
-
-
-
-
-
-
-<!---end of content txt--->
-</div>
-<!---end of content--->
-</div>
-
-
+</body>
 </html>
-
-<span class="phc"><a href="http://nemurou.tumblr.com/">theme by<br><b>nemurou</b></a></span>
