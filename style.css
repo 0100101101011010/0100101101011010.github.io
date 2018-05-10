@@ -1,0 +1,38 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+@import url('http://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Muli', 'Domine', monospace;
+}
+
+h1 {
+  font-family: 'Montserrat', monospace;
+  font-style: bold;
+}
+
+h2 {
+  font-family: 'Montserrat', monospace;
+
+}
+
+h3 {
+  font-family: 'Montserrat', monospace;
+}
+
+h4 {
+  font-family: 'Montserrat', monospace;
+}
+
+h5 {
+  font-family: 'Montserrat', monospace;
+}
+
+p {
+  font-size: 16px;
+}
