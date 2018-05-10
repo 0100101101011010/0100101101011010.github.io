@@ -14,13 +14,13 @@ body {
 }
 
 h1 {
-  font-size: 34px;
+  font-size: 38px;
   font-family: 'Montserrat', monospace;
   font-style: bold;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 30px;
   font-family: 'Montserrat', monospace;
 
 }
@@ -31,17 +31,17 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
-  font-family: 'Montserrat', monospace;
-}
-
-h5 {
   font-size: 20px;
   font-family: 'Montserrat', monospace;
 }
 
-h6 {
+h5 {
   font-size: 18px;
+  font-family: 'Montserrat', monospace;
+}
+
+h6 {
+  font-size: 17px;
   font-family: 'Montserrat', monospace;
 }
 
