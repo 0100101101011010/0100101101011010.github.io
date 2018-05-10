@@ -45,7 +45,7 @@ h6 {
   font-family: 'Montserrat', monospace;
 }
 
-.container-fluid {
+.contained {
   padding: 20px;
   max-width: 800px;
 }
