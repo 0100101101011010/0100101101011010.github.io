@@ -50,6 +50,10 @@ h6 {
   max-width: 800px;
 }
 
+.label {
+  font-size: 12px;
+}
+
 /* this one's for my lil copyright at the bottom-right */
 .fixx {
   position:fixed;
