@@ -10,32 +10,39 @@ body {
   background-color: white;
   color: black;
   font-family: 'Muli', 'Domine', monospace;
+  font-size: 16px;
 }
 
 h1 {
+  font-size: 34px;
   font-family: 'Montserrat', monospace;
   font-style: bold;
 }
 
 h2 {
+  font-size: 28px;
   font-family: 'Montserrat', monospace;
 
 }
 
 h3 {
+  font-size: 24px;
   font-family: 'Montserrat', monospace;
 }
 
 h4 {
+  font-size: 22px;
   font-family: 'Montserrat', monospace;
 }
 
 h5 {
+  font-size: 20px;
   font-family: 'Montserrat', monospace;
 }
 
-p {
-  font-size: 16px;
+h6 {
+  font-size: 18px;
+  font-family: 'Montserrat', monospace;
 }
 
 .container-fluid {
