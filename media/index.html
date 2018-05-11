@@ -150,7 +150,9 @@
     	margin-bottom: 7px;
     	padding: 300px 75px 50px;
     	color: #fff;
-    	background-image: url(https://images.unsplash.com/photo-1506808547685-e2ba962ded60?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd33fc6d316171dffb724ca209c06fc2&auto=format&fit=crop&w=975&q=80);
+    	/* background-image: url(https://images.unsplash.com/photo-1506808547
+      685-e2ba962ded60?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd33fc6d31
+      6171dffb724ca209c06fc2&auto=format&fit=crop&w=975&q=80); */
     	background-size: auto 100% ;
     	background-position:fixed
     }
@@ -333,7 +335,17 @@
     }
 
 
-    #credit{line-height:100%;border-radius:50%;position:fixed;bottom:10px;right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:20px;height:20px;overflow:hidden;font-size:10px;font-weight:100;white-space:nowrap;-moz-transition:all .6s ease-in-out;-ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;-webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out}#credit:hover{background:#000;width:80px;border-radius:15px}#credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px}
+    #credit{
+      line-height:100%;border-radius:50%;position:fixed;bottom:10px;
+      right:10px;color:#fff;background:rgba(0,0,0,.2);padding:5px;width:20px;
+      height:20px;overflow:hidden;font-size:10px;font-weight:100;
+      white-space:nowrap;-moz-transition:all .6s ease-in-out;
+      -ms-transition:all .6s ease-in-out;-o-transition:all .6s ease-in-out;
+      -webkit-transition:all .6s ease-in-out;transition:all .6s ease-in-out
+    }
+
+    #credit:hover{background:#000;width:80px;border-radius:15px}
+    #credit:before{font-size:10px;content:'\f292';font-family:FontAwesome;padding-right:5px}
 
 </style>
 
@@ -348,7 +360,10 @@
     <header>
         <h1>SKETCHES</h1>
         <div class="desc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, eos culpa consequuntur cumque voluptates perspiciatis neque itaque suscipit molestiae deserunt. Sapiente quidem ratione inventore dolor voluptatem praesentium, exercitationem porro sint. <button class="back" onclick="goBack()"><i aria-hidden="true" class="fa fa-chevron-left"></i>&nbsp;Go Back.</button>
+            I draw some stuff.
+            <button class="back" onclick="goBack()">
+              <i aria-hidden="true" class="fa fa-chevron-left"></i> RETURN
+            </button>
         </div>
     </header>
 
@@ -393,20 +408,20 @@
 <main>
 <div class="grid">
 
-    <a href="https://sta.sh/027uvrqt8m1ee">
+    <a href="/media/engbel.png">
     <div class="grid-item une people orange">
-    <figure><img src="https://orig00.deviantart.net/755c/f/2016/239/e/4/25pt_by_orangeasparagus-daffosl.png"></figure>
+    <figure><img src="/media/engbel.png"></figure>
     <div class="content">
     <div class="name">
-    <h2>an english boy</h2>
-    AND A BELGIAN GIRL</div>
+    <h2>brits</h2>
+    "YOU ARE CYNICAL, YOU LIKE BAD JOKES, AND YOU DRINK TOO MUCH AT THE WEEKEND."</div>
     </div>
     </div>
     </a>
 
-    <a href="https://sta.sh/01u3hnl5x1lx">
+    <a href="/media/hunter.png">
     <div class="grid-item deux places orange">
-    <figure><img src="https://pre00.deviantart.net/0216/th/pre/f/2016/239/c/3/10pt_by_orangeasparagus-daffosn.png"></figure>
+    <figure><img src="/media/hunter.png"></figure>
     <div class="content">
     <div class="name">
     <h2>nicholas the hunter</h2>
@@ -470,9 +485,9 @@
     </div>
     </a>
 
-    <a href="https://orangeasparagus.deviantart.com/art/god-will-forgive-us-633793205">
+    <a href="/media/godwillforgiveus.png">
     <div class="grid-item quatre people orange">
-    <figure><img src="https://pre00.deviantart.net/e660/th/pre/f/2016/254/1/e/god_will_forgive_us_by_orangeasparagus-dahcdyt.jpg"></figure>
+    <figure><img src="/media/godwillforgiveus.png"></figure>
     <div class="content">
     <div class="name">
     <h2>god will forgive us</h2>
@@ -503,20 +518,9 @@
     </div>
     </a>
 
-    <a href="http://sideburnsoverlord.tumblr.com/post/149217708822/when-hes-into-italian-guys-esa-fungtastic-is-my">
-     <div class="grid-item une places blue">
-    <figure><img src="https://78.media.tumblr.com/661ed97433ecd4fa3ac535a1b49d9228/tumblr_oc7gbsQjgS1u6bapxo1_500.png"></figure>
-    <div class="content">
-    <div class="name">
-    <h2>are you italian</h2>
-    WOULD AN ITALIAN WEAR A RONALDO SHIRT?</div>
-    </div>
-    </div>
-    </a>
-
-    <a href="#">
+    <a href="/media/antonius.png">
     <div class="grid-item deux people green">
-    <figure><img src="https://78.media.tumblr.com/7708b006ab41b9e883fe664ebf7ee48a/tumblr_o7qm5iQTah1u6bapxo1_500.png"></figure>
+    <figure><img src="/media/antonius.png"></figure>
     <div class="content">
     <div class="name">
     <h2>antonius</h2>
@@ -525,9 +529,9 @@
     </div>
     </a>
 
-    <a href="#">
+    <a href="/media/americangirl.png">
     <div class="grid-item deux people orange">
-    <figure><img src="https://78.media.tumblr.com/e121b5d0a6f5494e24209cbb6640dad0/tumblr_nvco4rIC0O1u6bapxo1_500.png"></figure>
+    <figure><img src="/media/americangirl.png"></figure>
     <div class="content">
     <div class="name">
     <h2>best wishes from the usa !</h2>
@@ -536,9 +540,9 @@
     </div>
     </a>
 
-    <a href="https://78.media.tumblr.com/b5efeb00cff945e4262f59a755707428/tumblr_nrx915XIYa1u6bapxo1_500.png">
+    <a href="/media/complaint.png">
     <div class="grid-item quatre people blue">
-    <figure><img src="https://78.media.tumblr.com/b5efeb00cff945e4262f59a755707428/tumblr_nrx915XIYa1u6bapxo1_500.png"></figure>
+    <figure><img src="/media/complaint.png"></figure>
     <div class="content">
     <div class="name">
     <h2>complaint</h2>
@@ -547,9 +551,9 @@
     </div>
     </a>
 
-    <a href="#">
+    <a href="/media/tulipsiblings.png">
     <div class="grid-item trois places orange">
-    <figure><img src="https://78.media.tumblr.com/7ee4813d61e68202faa842d766c45d94/tumblr_nwphxoOU4r1u6bapxo1_1280.png"></figure>
+    <figure><img src="/media/tulipsiblings.png"></figure>
     <div class="content">
     <div class="name">
     <h2>days r getting shorter</h2>
@@ -558,18 +562,27 @@
     </div>
     </a>
 
-    <a href="#">
+    <a href="/media/bel.png">
     <div class="grid-item deux people green">
-    <figure><img src="https://78.media.tumblr.com/136938a771860ed821cbc8d372a00698/tumblr_ohld4snsUR1u6bapxo1_1280.png"></figure>
+    <figure><img src="/media/bel.png"></figure>
     <div class="content">
     <div class="name">
-    <h2>woman from brittany</h2>
-    001 ARCHETYPE</div>
+    <h2>art institute of chicago</h2>
+    INSPIRED BY "<a href="http://www.artic.edu/aic/collections/artwork/81562">WOMAN FROM BRITTANY</a>"</div>
     </div>
     </div>
     </a>
 
-
+    <a href="/media/allworkandnoplay.png">
+    <div class="grid-item deux people green">
+    <figure><img src="/media/allworkandnoplay.png"></figure>
+    <div class="content">
+    <div class="name">
+    <h2>all work and no play</h2>
+    NEVER MADE ME LOSE IT</a>"</div>
+    </div>
+    </div>
+    </a>
 
 
 
