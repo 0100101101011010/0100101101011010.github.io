@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
+blockquote {
+  font-style: italic;
+}
 
 body {
   background-color: white;
