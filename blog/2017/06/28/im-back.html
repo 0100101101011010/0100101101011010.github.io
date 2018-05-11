@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="canonical" href="http://kellyzhang.me/blog/2017/06/28/im-back.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm back!</title>
+  <meta name="description" content="A lot has happened in the past months, and I'm
+    not sure how much of it I can get down, or how long my new spurt of
+    inspiration will last, but this time I'll try focusing more on my
+    own beliefs and getting my thoughts down, even if they're unpolished." />
+  <!-- include this exactly in every page -->
+  <link rel="shortcut icon" href="/thumbs/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <!-- up to here -->
+
+  <style type="text/css">
+    /* nothing here yet */
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div class="container-fluid contained">
+    <h1 class="text-center">Kelly Zhang &#9656; BLOG</h1>
+
+    <div class="text-center">
+      <a href="/"><button class="btn">home</button></a>
+      <a href="/blog"><button class="btn">back to all blog posts</button></a>
+    </div>
+
+    <div class="text-left row-boxed-in">
+
+      <article>
+        <header class="text-center"><h2>I'm back!</h2></header>
+
+        <div class="row h6 text-center">
+          <div class="col-xs-4">
+            <span class="label label-default">2017/06/28</span>
+          </div>
+          <div class="col-xs-4">
+            <span class="label label-default"><b>tags:</b> #<a href="/blog/widtw" style="color: white;">widtw</a></span>
+          </div>
+          <div class="col-xs-4">
+            <span class="label label-default"><span class="reading-time"></span> read</span>
+          </div>
+        </div>
+
+        <script>
+          $(function () {
+            var txt = $(".blog-main-content")[0].textContent,
+
+            wordCount = txt.replace( /[^\w ]/g, "" ).split( /\s+/ ).length;
+
+            var readingTimeInMinutes = Math.floor(wordCount / 228) + 1;
+            var readingTimeAsString = readingTimeInMinutes + " min";
+
+            $('article .reading-time').html(readingTimeAsString);
+        });
+        </script>
+
+        <section class="blog-main-content">
+          <p>
+            Hey all, I'm back!! I've found, over the years, that whenever I try
+            keeping a journal or blog I jump too enthusiastically into it for a
+            number of days or weeks, and soon I get exhausted and abandon it.
+            Usually I delete my old entries, but for this one I didn't, which
+            must be a sign, right? Maybe this attempt is the one that sticks.
+          </p>
+          <p>
+            Every time I resurrect a project I try to do something differently,
+            something that I hope will strike a balance between simple and
+            beautiful so it's easy enough to keep updating yet aesthetic enough
+            that I won't be ashamed of what I wrote ten years on. So these are
+            the things I'm doing differently this time:
+          </p>
+          <ul>
+            <li>
+              I'm cutting out the "aesthetic" part. The "beautiful" part. Part
+              of the reason I get burnout so quickly writing these posts is
+              because I'm always striving for perfection. I'm done with that
+              shit. It's totally against what I'm trying to do here, which is
+              expressing my thoughts and reliving my memories in as genuine a
+              manner as possible. From this post onward I'm no longer going to
+              be meticulously editing each post, chasing after the perfect word
+              to describe every feeling, smoothing my work to create a uniform
+              writing style and cutting out all my idiosyncrasies&mdash;it takes
+              too much effort.
+            </li>
+            <li>
+              Not all my posts will be essay-length anymore. If I only feel
+              like writing a paragraph on a subject, that's how much I'll write.
+              I won't force myself to dissect and over-analyze every event that
+              happens; just recording it is enough.
+            </li>
+          </ul>
+          <p>
+            That's it for now. A lot has happened in the past months, and I'm
+            not sure how much of it I can get down, or how long my new spurt of
+            inspiration will last, but this time I'll try focusing more on my
+            own beliefs and getting my thoughts down, even if they're unpolished.
+          </p>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  <p style="font-size: 8px;" class="fixx">(c) kelly zhang 2018</p>
+  </div>
+
+</body>
+</html>
