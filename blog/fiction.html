@@ -45,6 +45,29 @@
 </head>
 
 <body>
+
+
+  <script>
+    $(document).ready(function(){
+
+      $('#1filter').click(function() {
+        $("#2").remove();
+        $("#3").remove();
+        $("#4").remove();
+        $("#5").remove();
+      });
+
+      $('#2filter').click(function() {
+        $("#1").remove();
+        $("#3").remove();
+        $("#4").remove();
+        $("#5").remove();
+      });
+
+    });
+  </script>
+
+
   <div class="container-fluid contained">
     <h1 class="text-center">Kelly's Blog: all #fiction posts</h1>
 
@@ -54,21 +77,21 @@
     </div>
 
     <div class="text-center mark">
-      <ul id="filters" class="option-set clearfix" data-option-key="filter">
-        <li><b>Filter: </b></li>
-        <li><a href="#filter" data-option-filter=".story">all / </a></li>
-        <li><a href="#filter" data-option-filter=".1">&#9733; / </a></li>
-        <li><a href="#filter" data-option-filter=".2">&#9733; &#9733; / </a></li>
-        <li><a href="#filter" data-option-filter=".3">&#9733; &#9733; &#9733; / </a></li>
-        <li><a href="#filter" data-option-filter=".4">&#9733; &#9733; &#9733; &#9733; / </a></li>
-        <li><a href="#filter" data-option-filter=".5">&#9733; &#9733; &#9733; &#9733; &#9733;</a></li>
+      <ul>
+        <li><b>Filter by rating: </b></li>
+        <li><a href="#filter" data-option-filter=".story">all</a> / </li>
+        <li><button id="1filter">&#9733;</button> / </li>
+        <li><button id="2filter">&#9733; &#9733;</button> / </li>
+        <li><button id="3filter">&#9733; &#9733; &#9733;</button> / </li>
+        <li><button id="4filter">&#9733; &#9733; &#9733; &#9733;</button> / </li>
+        <li><button id="5filter">&#9733; &#9733; &#9733; &#9733; &#9733;</button></li>
       </ul>
     </div>
 
 
       <div class="row text-left">
-        <div class="col-xs border">
-          <article class="story 2">
+        <div class="col-xs border well">
+          <article id="story 1">
             <h2><a href="/blog/2018/05/10/clytemnestras-last-day.html">Clytemnestra's Last Day</a></h2>
             <h4>2018/05/10</h4>
             <h5>S. Montana Katz</h5>
@@ -84,9 +107,9 @@
 
       </div>
 
-      <div class="col-xs border">
+      <div class="col-xs border well">
 
-          <article class="story 1">
+          <article id="story 1">
             <h2><a href="/blog/#">ASDF</a></h2>
             <h3>Author: ASDF</h3>
             <p>
@@ -98,9 +121,9 @@
       </div>
 
 
-      <div class="col-xs border">
+      <div class="col-xs border well">
 
-          <article class="story 1">
+          <article id="story 1">
             <h2><a href="/blog/#">ASDF</a></h2>
             <h3>Author: ASDF</h3>
             <p>
