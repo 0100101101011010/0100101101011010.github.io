@@ -1,548 +1,373 @@
 <!DOCTYPE html>
 <head>
 
-<!---okay guys dont steal, theme by amywiiliams prev. clarascapaldis, you know the drill, instructions are in the code, okay enjoy--->
+<!--
 
-    <title>HOW TO UW: a guide to your first year at uwaterloo</title>
-    <link rel="shortcut icon" href="{Favicon}">
-    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+FIC REC PAGE
+By Paige @ neonbikethemes.tumblr.com
+last updated 8.16.17
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+Credits
+    - filtering code by zsu @creatre
 
-<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+Rules:
+    - Do not steal code or design
+    - Do not remove/alter credit
+    - Please like/reblog the post
 
-<script>
+Thanks!
 
-(function($){
+-->
+<link rel="canonical" href="http://kellyzhang.me/blog/fiction/" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kelly's Blog / #fiction tag </title>
+<meta name="description" content="Reviews of fiction books I've read" />
 
-$(document).ready(function(){
-
-$("a[title]").style_my_tooltips({
-
-tip_follows_cursor:true,
-
-tip_delay_time:100,
-
-tip_fade_speed:300,
-
-attribute:"title"
-
-});
-
-});
-
-})(jQuery);
-
-</script>
+<!-- include this exactly in every page -->
+<link rel="shortcut icon" href="/thumbs/favicon.png">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="/style.css" rel="stylesheet">
+<!-- up to here -->
 
 
 
-<script>
-$(document).ready(function(){
-  $(".t1, .close1").click(function(){
-if ($( ".b.one" ).hasClass( "big" )) {
-  setTimeout(function() {
-    $('.four, .two, .three').toggleClass('small');
-     }, 700);
-  setTimeout(function() {
-    $('.b.one').toggleClass('big');
-    $('.t1').fadeToggle(300);
-     }, 400);
-    $('.stuff').fadeToggle(300);
-} else {
-  setTimeout(function() {
-    $('.b.one').toggleClass('big');
-     }, 200);
-  setTimeout(function() {
-    $('.stuff').fadeToggle(300);
-     }, 600);
-    $('.four, .two, .three').toggleClass('small');
-    $('.t1').fadeToggle(300);
-}
-  });
-});
-</script>
+<style type=text/css>
 
-<script>
-$(document).ready(function(){
-  $(".t2, .close2").click(function(){
-if ($( ".b.two" ).hasClass( "big" )) {
-  setTimeout(function() {
-    $('.four, .one, .three').toggleClass('small');
-     }, 700);
-  setTimeout(function() {
-    $('.b.two').toggleClass('big');
-    $('.t2').fadeToggle(300);
-     }, 400);
-    $('.stuff').fadeToggle(300);
-} else {
-  setTimeout(function() {
-    $('.b.two').toggleClass('big');
-     }, 200);
-  setTimeout(function() {
-    $('.stuff').fadeToggle(300);
-     }, 600);
-    $('.four, .one, .three').toggleClass('small');
-    $('.t2').fadeToggle(300);
-}
-  });
-});
-</script>
+/* STUFF */
 
-<script>
-$(document).ready(function(){
-  $(".t3, .close3").click(function(){
-if ($( ".b.three" ).hasClass( "big" )) {
-  setTimeout(function() {
-    $('.four, .two, .one').toggleClass('small');
-     }, 700);
-  setTimeout(function() {
-    $('.b.three').toggleClass('big');
-    $('.t3').fadeToggle(300);
-     }, 400);
-    $('.stuff').fadeToggle(300);
-} else {
-  setTimeout(function() {
-    $('.b.three').toggleClass('big');
-     }, 200);
-  setTimeout(function() {
-    $('.stuff').fadeToggle(300);
-     }, 400);
-    $('.four, .two, .one').toggleClass('small');
-    $('.t3').fadeToggle(300);
-}
-  });
-});
-</script>
-
-<script>
-$(document).ready(function(){
-  $(".t4, .close4").click(function(){
-if ($( ".b.four" ).hasClass( "big" )) {
-  setTimeout(function() {
-    $('.one, .two, .three').toggleClass('small');
-     }, 700);
-  setTimeout(function() {
-    $('.b.four').toggleClass('big');
-    $('.t4').fadeToggle(300);
-     }, 400);
-    $('.stuff').fadeToggle(300);
-} else {
-  setTimeout(function() {
-    $('.b.four').toggleClass('big');
-     }, 200);
-  setTimeout(function() {
-    $('.stuff').fadeToggle(300);
-     }, 600);
-    $('.one, .two, .three').toggleClass('small');
-    $('.t4').fadeToggle(300);
-}
-  });
-});
-</script>
-
-<link href='http://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet' type='text/css'>
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <style type="text/css">
-
-.b.one.big, .b.two.big, .b.three.big, .b.four.big {
-    width:510px;
-    height:510px;
-    background:#eee; /*background of the tabs after they expand*/
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.b.one.big {
-    left:0;
-    top:0;
-}
-
-.b.two.big {
-    right:0;
-    top:0;
-}
-
-.b.three.big {
-    left:0;
-    bottom:0;
-}
-
-.b.four.big {
-    right:0;
-    bottom:0;
-}
-
-.b.small {
--webkit-transform:scale(0);
--moz-transform:scale(0);
--o-transform:scale(0);
--ms-transform:scale(0);
-transform:scale(0);
-}
-
-#s-m-t-tooltip {
-    max-width:150px;
-    padding:5px 8px;
-    margin:20px 14px 7px 10px;
-    background-color:#fff;
-    font-family:Calibri;
-    font-size:10px;
-    line-height:11px;
-    letter-spacing:1px;
-    text-transform:uppercase;
-    border:1px solid #777;
-    z-index:99999999;
-}
-
-::-webkit-scrollbar {
-    height:3px;
-    width:2px;
-    background-color: #fff;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #555; /*scrollbar color*/
-    height:auto;
-    border-bottom:none;
-}
-
-::selection {
-    background-color: #000;
-    color: #fff;
-}
-
-body {
-    background-color: #f7f7f7; /*change whole page background color*/
-    font-family:arial;
-    color:#777;
+body{
+    color:#000000;
+    margin:0;
+    background:#f0f0f0 url('');
+    background-attachment:fixed;
 }
 
 a {
     text-decoration:none;
-    color:#bbb; /*color of link*/
+    color:#000;
 }
 
 a:hover {
-    color:#777; /*color of hovered link*/
+    text-decoration:none;
+    color:#a0a0a0;
 }
 
-b {
-    color:#555; /*color of bolded text*/
+p{
+    margin: 0px 0px 10px 0px;
 }
 
-.con {
-    background:#fff; /*change color of the borders around the four squares*/
-    width:510px;
-    height:510px;
+ul{
+    list-style-type:square;
+}
+
+ol{
+    list-style-type:lower-roman;
+}
+
+.navbar{
     position:fixed;
-    margin:auto;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-}
-
-.b {
-    width:230px;
-    height:230px;
-    background-color: #f7f7f7; /*change background of the tabs before they are expanded */
-    position:absolute;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s;
-}
-
-.b:hover {
-    background:#f1f1f1; /*change tabs background color on hover*/
-}
-
-.b.one {
-    top:15px;
-    left:15px;
-}
-
-.b.two {
-    top:15px;
-    right:15px;
-}
-
-.b.three {
-    bottom:15px;
-    left:15px;
-}
-
-.b.four {
-    bottom:15px;
-    right:15px;
-}
-
-.top {
-    background:#aaa; /*change background color of the top bar where the close button is*/
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    padding:8px;
-}
-
-.t {
-    position:absolute;
-    left:0;
-    right:0;
-    top:0;
-    bottom:0;
-    text-align:center;
-    padding:100px 0px;
-    letter-spacing:3px;
-    font-size:30px;
-    font-weight:300;
-    font-family:'Raleway', sans-serif;
-    text-transform:uppercase;
-    cursor:pointer;
-}
-
-.stuff {
-    display:none;
-}
-
-.top a {
-    padding:5px;
-    font-size:10px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    color:#fff; /*change color of close button*/
-    float:right;
-    border:2px solid #fff; /*change color of close button border*/
-}
-
-.side {
-    position:absolute;
-    top:60px;
-    bottom:15px;
-    width:170px;
-    right:15px;
-}
-
-.side img {
-    width:120px;
-    margin-bottom:5px;
-    height:120px;
-    padding:25px;
     background:#fff;
+    text-align:left;
+    width:100%;
+    height:50px;
+    top:0px;
+    z-index:99999999999999;
 }
 
-.q {
-    padding:15px;
-    background:#fff; /*change content background*/
+#title{
+    float:left;
+    margin-left:25px;
+    margin-top:18px;
+    text-transform:uppercase;
+    text-align:center;
     font-size:10px;
-    margin-bottom:6px;
+    letter-spacing:1px;
+    font-weight:bold;
+    z-index:9999999999;
+}
+
+#navlinks{
+    float:right;
+    margin-top:13px;
+    margin-right:20px;
+    text-align:right;
+    z-index:999999999;
+}
+
+.navlink{
+    background:#fff;
+    border:0px solid #a0a0a0;
+    padding:4px;
+    padding-left:8px;
+    padding-right:8px;
+    margin-left:3px;
+    margin-right:3px;
+    font-size:10px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+    text-transform:uppercase;
+}
+
+/* CONTAINER */
+
+.container{
+    width:770px;
+    text-align:left;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:30px;
+    margin-bottom:100px;
+}
+
+article{
+    float:left;
+    border: 0px solid #dbdbdb;
+    padding:0px;
+    margin: 15px 25px 10px 0px;
+    font-size:9px;
+    text-align:left;
+    width:230px;
+}
+article img{
+    width:100%;
+}
+
+.story {
+    transition-duration:.5s;
+    -moz-transition-duration:.5s;
+    -webkit-transition-duration:.5s;
+    -o-transition-duration:.5s;
+}
+
+.sectiontitle{
+    background:#fff;
+    font-size:11px;
+    padding:10px;
+    margin:0px;
+    margin-bottom:1px;
     text-align:center;
     text-transform:uppercase;
+    font-weight:bold;
     letter-spacing:1px;
+    border-bottom: 0px solid #dbdbdb;
 }
 
-.content, .ccontent {
-    position:absolute;
-    top:60px;
-    bottom:15px;
-    overflow:auto;
-    padding:15px;
-    box-sizing:border-box;
-    left:15px;
-    width:300px;
-    text-transform:uppercase;
-    font-size:11px;
-    line-height:180%;
+.abt{
+    font-size:9px;
+    font-style:italic;
     letter-spacing:1px;
-    background:#fff; /*change content background*/
+    margin-bottom:-1px;
+    padding:7px;
+    padding-left:11px;
+    background:#fff;
+    border-bottom:1px solid #eeeeee;
+    margin-bottom:0px;
+    -webkit-transition: all .5s;
+    text-align:left;
 }
 
-.ccontent {
-    right:15px;
-    width:auto;
+.txt{
+    font-size:9px;
+    letter-spacing:1px;
+    margin-bottom:-1px;
+    padding:7px;
+    padding-left:11px;
+    background:#fff;
+    border-bottom:1px solid #eeeeee;
+    margin-bottom:0px;
+    -webkit-transition: all .5s;
+    text-align:left;
+    text-align:center;
 }
 
-.tt {
-    font-size:15px;
-    letter-spacing:2px;
-    margin:10px 0px;
-    color:#555; /*change tags title text color*/
-}
-
-.c1 a {
-    padding:1px 5px;
-    display:inline-block;
-    width:90px;
-    margin:5px 3px;
-    color:#666; /*change tags text color*/
-    border:1px solid #bbb; /*change tags border color*/
-}
-
-.c1 a:hover {
-    border-bottom:1px solid #777; /*change tags border hover color*/
-}
-
-.links {
-    position:absolute;
-    bottom:-20px;
-    text-align:right;
-    letter-spacing:2px;
-    text-transform:uppercase;
+#sort{
+    position:relative;
+    margin:120px auto 0 auto;
     font-size:10px;
-    left:10px;
-    right:10px;
+    letter-spacing:1px;
+    width:770px;
+    text-align:center;
+    padding-right:25px;
 }
 
-.links a {
-    margin:0px 5px;
+#sort ul{
+    list-style-type:none;
+    margin-left:-40px;
+}
+#sort li{
+    display:inline-block;
+    padding:5px 7px;
+    padding-left:11px;
+    background:#fff;
+    border-left:1px solid #eeeeee;
+    margin: 0 0 2px -3px;
+}
+
+.selected{
+    opacity:.4;
 }
 
 </style>
+
 </head>
+
 <body>
 
-<div class="con">
 
-    <div class="b one">
-        <div class="t t1">about</div>
-        <div class="stuff">
-            <div class="top">
-                <a href="javascript:;" class="close1">close</a>
-            </div>
-            <div class="side">
-                <!---about image--->
-                <img src="https://33.media.tumblr.com/e93b7a69c5f84cda6159ca4df28b3b34/tumblr_ngyempsyr11u692uio5_250.png">
-                <!---end about image--->
 
-                <div class="q">
-                <!---quote--->
-                here is a quote about something you fancy
-                </div>
+<div class="navbar">
 
-                <!---change these accordingly--->
-                <div class="q">name: steph</div>
-                <div class="q">age: fourteen</div>
-                <div class="q">location: canada</div>
+    <div id="title">FIC REC</div>
 
-            </div>
-            <div class="content">
+    <div id="navlinks">
 
-            <!---description--->
-                <p><b>bold</b> <i>italic</i> <u>underline</u> <a href="/">link</a>. remember to wrap each paragraph in  < p > and < /p > tags!!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at quam tellus. Nullam interdum ligula ac malesuada accumsan. Proin cursus rhoncus fringilla. Phasellus eget mauris lectus. Sed egestas porta libero, vel sollicitudin urna porttitor nec. Quisque eget nisi vel nulla maximus interdum a quis dolor. Morbi eget eros risus. Donec id leo ut justo mollis consequat a id est.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at quam tellus. Nullam interdum ligula ac malesuada accumsan. Proin cursus rhoncus fringilla. Phasellus eget mauris lectus. Sed egestas porta libero, vel sollicitudin urna porttitor nec. Quisque eget nisi vel nulla maximus interdum a quis dolor. Morbi eget eros risus. Donec id leo ut justo mollis consequat a id est.</p>
-            <!--end description--->
-            </div>
-        </div>
+        <a href="/">
+        <div class="navlink">Home</div></a>
+
+        <a href="http://tumblr.com/dashboard">
+        <div class="navlink">Dashboard</div></a>
+
+        <a href="http://neonbikethemes.tumblr.com">
+        <div class="navlink">Credit</div></a>
+
     </div>
-
-
-    <div class="b two">
-        <div class="t t2">tags</div>
-        <div class="stuff">
-            <div class="top">
-                <a href="javascript:;" class="close2">close</a>
-            </div>
-            <div class="ccontent c1">
-
-                <!---copy and paste from here--->
-                <div class="tt">tags title</div>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <!---to here to add a new tags section--->
-
-                <div class="tt">tags title</div>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-
-                <div class="tt">tags title</div>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-                <a href="/">tag</a>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="b three">
-        <div class="t t3">faq + ask</div>
-        <div class="stuff">
-            <div class="top">
-                <a href="javascript:;" class="close3">close</a>
-            </div>
-            <div class="ccontent" style="text-align:center">
-                here is where you put your faq.
-                <!---question--->
-                <p><b>Questions about life and the depth of our reality?</b> Answers that somewhat satisfy your curiosity.</p>
-                <!---end question. remember to wrap each q&a in <p> and </p> tags, and wrap each question in <b> and </b> tags like shown above.--->
-
-                <p><b>Question?</b> Answers.</p>
-                <p><b>There are more questions?</b> There are more answers.</p>
-
-
-                <!---ask box (remember to change YOURURLHERE to your actual url or it won't work!)--->
-<iframe frameborder="0" scrolling="no" width="100%" height="190" src="http://www.tumblr.com/ask_form/YOURURLHERE.tumblr.com" style="overflow:auto; margin-top:10px" id="ask_form"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('ask_form').allowTransparency=true;</script><![endif]-->
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="b four">
-        <div class="t t4">blogroll</div>
-        <div class="stuff">
-            <div class="top">
-                <a href="javascript:;" class="close4">close</a>
-            </div>
-            <div class="ccontent" style="text-align:center">
-                        {block:Following}{block:Followed}
-       <div style="display:inline-block; margin:7px" class="following">
-       <a target="_blank" href='{FollowedURL}' title='{FollowedName}'><img src='{FollowedPortraitURL-40}'></a>
-       </div>
-       {block:Followed}{/block:Following}
-            </div>
-        </div>
-    </div>
-
-    <div class="links">
-        <a href="/" style="float:left">back</a>
-        <a href="http://tumblr.com/dashboard">dash</a>
-        <!---here are your two custom links, feel free to add more if ya feel like it--->
-        <a href="/">one</a>
-        <a href="/">two</a>
-        <!---do not remove or I swear i will fucking shank you--->
-        <a href="http://gloriousponds.co.vu" title="amywiiliams">©</a>
-    </div>
-
-
-
 
 </div>
 
 
+<!----- Filter links ------>
+<div id="sort">
+<ul id="filters" class="option-set clearfix" data-option-key="filter">
+
+    <li><b>sort </b></li>
+    <li><a href="#filter" data-option-filter=".story">all</a></li>
+    <li><a href="#filter" data-option-filter=".fic">fiction</a></li>
+    <li><a href="#filter" data-option-filter=".fantasy">fantasy</a></li>
+    <li><a href="#filter" data-option-filter=".scifi">sci-fi</a></li>
+    <li><a href="#filter" data-option-filter=".romance">romance</a></li>
+    <li><a href="#filter" data-option-filter=".fav">favorites</a></li>
+
+    <!--
+
+    Here's an explanation of how the tag system works:
+
+    this is our exaple line:
+    <li><a href="#filter" data-option-filter=".fantasy">fantasy</a></li>
+
+    the flter part (ex: data-option-filter=".fantasy") is the actual tag. You will use this tag and add it to the classes of the fic below. The tag cannot have a space in it.
+    The word in between <a ...> and </a> will be the word that actualy appears on the website. (ex: Fantasy)
+    When you want to tag a fic as fantasy, you will add 'fantasy' to the list of classes at the beginning (see below for more info).
+
+    to add a new tag, copy an paste one of the lines and edit it.
+
+    -->
+
+</ul>
+</div>
+
+
+<!-- START CONTAINER --->
+<div class="container clearfix" >
+<!-- paste any new sections after this line -->
+
+
+<!-- START SECTION -->
+<article class="story HERES WHERE YOU WILL LIST TAGS">
+<!-- (above) all sections should have the story class, but you will also want
+to add the classes that apply to it. simply type each tag out in the class="..."
+section, and leave a space in between each tag.-->
+    <div class="sectiontitle">
+        <a href="http://LINK TO FANFIC">Fanfic Title</a>
+    </div>
+    <div class="txt">by <a href="http://LINK TO AUTHOR">Author</a></div>
+    <div class="abt">
+       Description or review of fanfic
+    </div>
+    <div class="txt"><b>pairing</b> / rating / length / tags</div>
+</article>
+<!-- END SECTION -->
+
+
+
+<!-- START SECTION -->
+<article class="story fantasy fav">
+    <div class="sectiontitle">
+        <a href="http://archiveofourown.org/">Example</a>
+    </div>
+    <div class="txt">by <a href="http://archiveofourown.org/">username</a> on ao3</div>
+    <div class="abt">
+       In ut lobortis dolor. Duis rhoncus pulvinar augue. Quisque id ante tortor. In hac habitasse platea dictumst. Nam sed diam ultricies, consequat massa consectetur, mattis nunc. Nam ultrices dui quis hendrerit ultricies. Nulla porta augue id massa laoreet scelerisque. Phasellus at suscipit lectus.
+    </div>
+    <div class="txt"><b>pairing</b> / mature / 121k / angst, fluff, romance, high school!AU</div>
+
+</article>
+<!-- END SECTION -->
+
+<article class="story scifi fic romance">
+    <div class="sectiontitle">
+        <a href="http://archiveofourown.org/">Example</a>
+    </div>
+    <div class="txt">by <a href="http://archiveofourown.org/">username</a> on ao3</div>
+    <div class="abt">
+       In ut lobortis dolor. Duis rhoncus pulvinar augue. Quisque id ante tortor. In hac habitasse platea dictumst. Nam sed diam ultricies, consequat massa consectetur, mattis nunc. Nam ultrices dui quis hendrerit ultricies.
+    </div>
+    <div class="txt"><b>pairing</b> / mature / 121k / angst, fluff, romance, high school!AU</div>
+
+</article>
+<!-- END SECTION -->
+
+
+
+
+<!-- To make new sections, copy an entire section, and paste before this line! -->
+</div>
+</div>
+
+
+<!------- filter scripts -------->
+ <script src="http://static.tumblr.com/fuu6t9w/kh8ml0pl9/jquery-1.7.1.min.js"></script>
+ <script src="http://static.tumblr.com/fuu6t9w/eubml0pm0/jquery.isotope.min.js"></script>
+ <script>
+ $(function(){
+ var $container = $('.container');
+ $container.isotope({
+ itemSelector : '.story'
+ });
+ var $optionSets = $('#sort .option-set'),
+ $optionLinks = $optionSets.find('a');
+
+ $optionLinks.click(function(){
+ var $this = $(this);
+ // don't proceed if already selected
+ if ( $this.hasClass('selected') ) {
+ return false;
+ }
+ var $optionSet = $this.parents('.option-set');
+ $optionSet.find('.selected').removeClass('selected');
+ $this.addClass('selected');
+ // make option object dynamically, i.e. { filter: '.my-filter-class' }
+ var options = {},
+ key = $optionSet.attr('data-option-key'),
+ value = $this.attr('data-option-filter');
+ // parse 'false' as false boolean
+ value = value === 'false' ? false : value;
+ options[ key ] = value;
+ if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+ // changes in layout modes need extra logic
+ changeLayoutMode( $this, options )
+ } else {
+ // otherwise, apply new options
+ $container.isotope( options );
+ }
+ return false;
+ });
+ });
+ </script>
+ <!-----end filter scripts------>
 
 
 </body>
-</html>
