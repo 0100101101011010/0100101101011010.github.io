@@ -1,9 +1,9 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-@import url('http://fonts.googleapis.com/css?family=Domine');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 @import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
 
 blockquote {
   font-style: italic;
@@ -12,40 +12,40 @@ blockquote {
 body {
   background-color: white;
   color: black;
-  font-family: 'Muli', 'Domine', monospace;
+  font-family: 'Muli', monospace;
   font-size: 16px;
 }
 
 h1 {
   font-size: 38px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
   font-style: bold;
 }
 
 h2 {
   font-size: 24px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
 
 }
 
 h3 {
   font-size: 20px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
 }
 
 h4 {
   font-size: 18px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
 }
 
 h5 {
   font-size: 16px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
 }
 
 h6 {
   font-size: 14px;
-  font-family: 'Montserrat', monospace;
+  font-family: 'Poppins', 'Montserrat', monospace;
 }
 
 .contained {
