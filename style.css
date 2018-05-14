@@ -50,10 +50,6 @@ h6 {
   font-family: 'Poppins', 'Montserrat', monospace;
 }
 
-header {
-  background-color: #e6e6e6;
-}
-
 .contained {
   padding: 20px;
   max-width: 800px;
