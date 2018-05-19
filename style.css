@@ -22,13 +22,9 @@ blockquote {
 
 body {
   background-color: #eae7dc;
-  color: #8e8d8a;
+  color: #636261;
   font-family: 'Exo', monospace;
   font-size: 16px;
-}
-
-btn {
-  background-color: d8c3a5;
 }
 
 figcaption {
@@ -74,6 +70,10 @@ h6 {
 
 hr {
   border-top: 1px solid #8e8d8a;
+}
+
+.btn {
+  background-color: d8c3a5;
 }
 
 .contained {
