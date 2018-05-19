@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Exo:400,700');
 
 a {
-  color: #e98074
+  color: #e85a4f;
 }
 
 a:hover {
-  color: #e85a4f;
+  color: #e98074;
   /* border-bottom: none; */
 }
 
