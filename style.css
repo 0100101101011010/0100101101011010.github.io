@@ -3,13 +3,26 @@
    "how to change link color." */
 @import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Exo:400,700');
 
+a {
+  color: #e98074
+}
+
+a:hover {
+  color: #e85a4f;
+  /* border-bottom: none; */
+}
+
 blockquote {
-  font-style: italic;
+  margin: 10px 20px 10px;
+  padding: 0px 15px;
+  border-left: 0.25em solid #ccc;
+  background-color: #d8c3af;
+  line-height: 1.5;
 }
 
 body {
-  background-color: #ffe7e5;
-  color: black;
+  background-color: #eae7dc;
+  color: #8e8d8a;
   font-family: 'Exo', monospace;
   font-size: 16px;
 }
@@ -53,6 +66,10 @@ h6 {
   font-size: 14px;
   font-family: 'Exo', monospace;
   font-weight: 700;
+}
+
+hr {
+  border-top: 1px solid #8e8d8a;
 }
 
 .contained {
