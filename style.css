@@ -73,7 +73,8 @@ hr {
 }
 
 .btn {
-  background-color: d8c3a5;
+  background-color: #d8c3a5;
+  font-weight:700;
 }
 
 .contained {
