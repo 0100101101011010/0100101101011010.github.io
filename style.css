@@ -1,7 +1,7 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Tajawal:400,500,700|Exo');
+@import url('https://fonts.googleapis.com/css?family=Archivo:bold|Exo');
 
 blockquote {
   font-style: italic;
@@ -20,35 +20,35 @@ figcaption {
 
 h1 {
   font-size: 38px;
-  font-family: 'Tajawal', monospace;
-  font-weight: 700
+  font-family: 'Archivo', monospace;
+  font-style: bold
 }
 
 h2 {
   font-size: 24px;
-  font-family: 'Tajawal', monospace;
-  font-weight: 500
+  font-family: 'Archivo', monospace;
+  font-weight: 900
 
 }
 
 h3 {
   font-size: 20px;
-  font-family: 'Tajawal', monospace;
+  font-family: 'Archivo', monospace;
 }
 
 h4 {
   font-size: 18px;
-  font-family: 'Tajawal', monospace;
+  font-family: 'Archivo', monospace;
 }
 
 h5 {
   font-size: 16px;
-  font-family: 'Tajawal', monospace;
+  font-family: 'Archivo', monospace;
 }
 
 h6 {
   font-size: 14px;
-  font-family: 'Tajawal', monospace;
+  font-family: 'Archivo', monospace;
 }
 
 .contained {
