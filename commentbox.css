@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400');
+
 #HCB_comment_box .clearfix{*zoom:1}#HCB_comment_box .clearfix:before,#HCB_comment_box .clearfix:after,#HCB_comment_box .form-actions:before,#HCB_comment_box .form-actions:after,#HCB_comment_box .form-horizontal .control-group:before,#HCB_comment_box .form-horizontal .control-group:after,#HCB_comment_box .btn-group:before,#HCB_comment_box .btn-group:after{content:"";display:table}
 #HCB_comment_box .clearfix:after,#HCB_comment_box .form-actions:after,#HCB_comment_box .form-horizontal .control-group:after,#HCB_comment_box .btn-group:after{clear:both}#HCB_comment_box .hide-text{background-color:transparent;border:0;color:transparent;font:0/0 a;text-shadow:none}
 #HCB_comment_box .input-block-level{width:100%;box-sizing:border-box;-ms-box-sizing:border-box;display:block;-webkit-box-sizing:border-box;min-height:28px;-moz-box-sizing:border-box}#HCB_comment_box form{margin:0 0 18px}
@@ -5,7 +7,7 @@
 #HCB_comment_box legend{margin-bottom:27px;line-height:36px;width:100%;display:block;font-size:19.5px;border-bottom:1px solid #eee;border:0;color:#333;padding:0}
 #HCB_comment_box legend small{color:#999;font-size:13.5px}
 #HCB_comment_box label,#HCB_comment_box input,#HCB_comment_box input.btn,#HCB_comment_box select,#HCB_comment_box textarea{line-height:18px;font-size:13px;font-weight:400}
-#HCB_comment_box input,#HCB_comment_box input.btn,#HCB_comment_box select,#HCB_comment_box textarea{font-family:monospace;}
+#HCB_comment_box input,#HCB_comment_box input.btn,#HCB_comment_box select,#HCB_comment_box textarea{font-family:Exo";}
 #HCB_comment_box label{margin-bottom:5px;display:block;color:#333}
 #HCB_comment_box input,#HCB_comment_box textarea,#HCB_comment_box select,#HCB_comment_box .uneditable-input{padding:4px;line-height:18px;display:inline-block;border:1px solid #ccc;margin-bottom:9px;-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;font-size:13px;background-color:#fff;color:#555}
 #HCB_comment_box .uneditable-textarea,#HCB_comment_box input[type=button],#HCB_comment_box input[type=reset],#HCB_comment_box input[type=submit]{height:auto;width:auto}
