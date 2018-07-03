@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="canonical" href="http://kellyzhang.me/resources/food" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food: Recipes, Pictures, Videos, and more | Kelly Zhang</title>
+  <meta name="description" content="A collection of cooking guides, Youtube
+  channels, recipes with pictures, my reviews of each dish,
+  and cooking tips." />
+  <!-- include this exactly in every page -->
+  <link rel="shortcut icon" href="/thumbs/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  <!-- up to here -->
+
+
+
+  <!-- filter scripts -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="//unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="//unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            masonry: {
+                columnWidth: 250,
+                fitWidth: true,
+                gutter: 3
+            },
+            hiddenStyle: {
+                opacity: 0
+            },
+            visibleStyle: {
+                opacity: 1
+            },
+            transitionDuration: '0.5s'
+        });
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress(function() {
+            $grid.isotope('layout');
+        });
+        // store filter for each group
+        var filters = {};
+        $('.filters').on('click', '.button', function() {
+            var $this = $(this);
+            // get group key
+            var $buttonGroup = $this.parents('.button-group');
+            var filterGroup = $buttonGroup.attr('data-filter-group');
+            // set filter for group
+            filters[filterGroup] = $this.attr('data-filter');
+            // combine filters
+            var filterValue = concatValues(filters);
+            // set filter for Isotope
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+        // change is-checked class on buttons
+        $('.button-group').each(function(i, buttonGroup) {
+            var $buttonGroup = $(buttonGroup);
+            $buttonGroup.on('click', 'button', function() {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $(this).addClass('is-checked');
+            });
+        });
+    });
+    // flatten object by concatting values
+    function concatValues(obj) {
+        var value = '';
+        for (var prop in obj) {
+            value += obj[prop];
+        }
+        return value;
+    }
+</script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+  <style type="text/css">
+
+    .boxed-in {
+      padding-top: 30px;
+      padding-bottom:30px;
+    }
+
+
+    *, figure {
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+    	border: none;
+    	background: none;
+    }
+
+
+    .filters .button-group {
+    	margin: 20px 0 0;
+    }
+
+    .filters button {
+    	font-family: heebo, helvetica neue, helvetica, arial, sans-serif;
+    	font-size: 13px;
+    	display: block;
+    	outline: none;
+    	color: inherit;
+    	padding: 1px 0
+    }
+
+    .filters button:before {
+    	font-family: FontAwesome;
+    	display: inline-block;
+    	width: 15px;
+    	content: '\f096';
+    	vertical-align: middle;
+    	text-align: left;
+    	color: #fff;
+    	color: rgba(255, 255, 255, 0.7)
+    }
+
+    .filters .button.is-checked::before {
+    	content: '\f046';
+    	color: #fff;
+    }
+
+    .filters button:hover {
+    	cursor: pointer;
+    }
+
+    .grid {
+    	line-height: 100%;
+    	position: fixed;
+    	top: 80px;
+    	margin: 0 auto;
+    	margin-bottom: 100px;
+    }
+
+    .grid-item {
+    	float: left;
+    	width: 250px;
+    	height: auto;
+    	margin-bottom: 3px;
+    	box-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+    }
+
+    figure {
+    	overflow: hidden;
+    	background: #bababa;
+    }
+
+    .content {
+    	font-size: 14px;
+    	min-height: 60px;
+    	padding: 10px 10px 30px;
+    	background: #fff;
+    }
+
+     a {
+        color:inherit;
+    }
+
+    h2 {
+    	font-size: 18px;
+    	text-transform: uppercase;
+    }
+
+    h2:after {
+    	font-size: 60%;
+    	font-weight: normal;
+    	margin-left: 1px;
+    	content: '\00ae';
+    	vertical-align: super;
+    }
+
+    .name {
+    	font-family: helvetica neue, helvetica, arial, heebo, sans-serif;
+    	line-height: 15px;
+    }
+
+
+
+    .grid-item img {
+    	float: left;
+    	width: 100%;
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+<div class="container-fluid contained">
+  <h1 class="text-center">Food</h1>
+
+  <div class="text-center" style="margin-bottom:20px;">
+    <a href="/"><button class="btn">home</button></a>
+    <a href="/blog"><button class="btn">blog</button></a>
+    <a href="/resources"><button class="btn">resources</button></a>
+    <a href="https://www.linkedin.com/in/kelly-zhang"><button class="btn">linkedin</button></a>
+    <!-- <a href="https://github.com/0100101101011010"><button class="btn">github</button></a> -->
+    <a href="/contact"><button class="btn">contact</button></a>
+  </div>
+
+
+
+<div class="row boxed-in">
+
+  <div class="col-xs-3">
+
+    <div class="filters">
+
+      <!-- category one -->
+
+      <div class="button-group" data-filter-group="time">
+        <h3>COOKING TIME</h3>
+        <button class="button is-checked" data-filter="">any</button>
+        <button class="button" data-filter=".10">under 10 min</button>
+        <button class="button" data-filter=".30">under 30 min</button>
+        <button class="button" data-filter=".60">under an hour</button>
+        <button class="button" data-filter=".longer">over an hour</button>
+        <button class="button" data-filter=".overnight">overnight prep</button>
+      </div>
+
+      <div class="button-group" data-filter-group="mealprep">
+        <h3>MEAL PREP FRIENDLY?</h3>
+        <button class="button is-checked" data-filter="">don't care</button>
+        <button class="button" data-filter=".yes">yes</button>
+        <button class="button" data-filter=".no">no</button>
+        <button class="button" data-filter=".otg">good for on-the-go</button>
+      </div>
+
+      <div class="button-group" data-filter-group="craving">
+        <h3>CRAVING</h3>
+        <button class="button is-checked" data-filter="">any</button>
+        <button class="button" data-filter=".sweet">sweet</button>
+        <button class="button" data-filter=".salty">salty</button>
+        <button class="button" data-filter=".spicy">spicy</button>
+        <button class="button" data-filter=".sour">sour</button>
+      </div>
+
+      <!-- category one -->
+      <div class="button-group" data-filter-group="calories">
+        <h3>CALORIES</h3>
+        <button class="button is-checked" data-filter="">don't care</button>
+        <button class="button" data-filter=".unknown">unknown</button>
+        <button class="button" data-filter=".100">less than 100</button>
+        <button class="button" data-filter=".200">less than 200</button>
+        <button class="button" data-filter=".300">less than 300</button>
+        <button class="button" data-filter=".400">less than 400</button>
+        <button class="button" data-filter=".500">less than 500</button>
+        <button class="button" data-filter=".over">over 500</button>
+      </div>
+
+      <!-- category two -->
+      <div class="button-group" data-filter-group="diet">
+        <h3>DIET</h3>
+        <button class="button is-checked" data-filter="">all</button>
+        <button class="button" data-filter=".vegan">vegan</button>
+        <button class="button" data-filter=".veg">vegetarian</button>
+        <button class="button" data-filter=".fish">contains fish</button>
+        <button class="button" data-filter=".meat">contains any meat</button>
+      </div>
+
+      <!-- category three -->
+      <div class="button-group" data-filter-group="carbs">
+        <h3>CARBS</h3>
+        <button class="button is-checked" data-filter="">don't care</button>
+        <button class="button" data-filter=".lowcarb">low-carb</button>
+        <button class="button" data-filter=".highcarb">all the carbs</button>
+      </div>
+
+      <!-- category three -->
+      <div class="button-group" data-filter-group="fats">
+        <h3>FATS</h3>
+        <button class="button is-checked" data-filter="">don't care</button>
+        <button class="button" data-filter=".lowfat">low-fat</button>
+        <button class="button" data-filter=".highfat">high-fat</button>
+      </div>
+
+      <!-- category three -->
+      <div class="button-group" data-filter-group="proteins">
+        <h3>PROTEINS</h3>
+        <button class="button is-checked" data-filter="">don't care</button>
+        <button class="button" data-filter=".highprotein">all the protein</button>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="col-xs-9">
+    <div class="grid">
+
+      <a href="/tagged/name">
+      <div class="grid-item une people orange">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE<br />does this work?<br />wb this<br />omg yes</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item deux places orange">
+      <figure><img src="http://i.imgur.com/gw7v36b.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item trois people blue">
+      <figure><img src="http://i.imgur.com/cfU2Rm4.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item une people green">
+      <figure><img src="http://i.imgur.com/RoHdOU4.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item trois people orange">
+      <figure><img src="http://i.imgur.com/F3GwjaI.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item deux people blue">
+      <figure><img src="http://i.imgur.com/sZHA8QS.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item trois places green">
+      <figure><img src="http://i.imgur.com/Eb8BZF8.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item quatre people orange">
+      <figure><img src="http://i.imgur.com/c2CGY7y.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item quatre people green">
+      <figure><img src="http://i.imgur.com/kWK4nYv.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item trois people blue">
+      <figure><img src="http://i.imgur.com/VCBQyTo.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+       <div class="grid-item une places blue">
+      <figure><img src="http://i.imgur.com/BVFa7SA.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item deux people green">
+      <figure><img src="http://i.imgur.com/tsYlPRm.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item deux people orange">
+      <figure><img src="http://i.imgur.com/KQYWZc0.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item quatre people blue">
+      <figure><img src="http://i.imgur.com/02TNSpE.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item trois places orange">
+      <figure><img src="http://i.imgur.com/xPbiBVQ.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+      <a href="/tagged/name">
+      <div class="grid-item deux people green">
+      <figure><img src="http://i.imgur.com/fn8EWc9.jpg"></figure>
+      <div class="content">
+      <div class="name">
+      <h2>hello there</h2>
+      001 ARCHETYPE</div>
+      </div>
+      </div>
+      </a>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<p style="font-size: 8px;" class="fixx">(c) kelly zhang 2018</p>
+</div>
+
+</body>
+</html>
