@@ -209,7 +209,7 @@
     <p>FYI, a meal counts as "good for on-the-go" if it's easy to store in a lunchbox, doesn't need heating up, and can be eating without utensils!</p>
     <h3>FILTER BY...</h3>
 
-    <div class="col-xs-3">
+    <div class="col-xs-4">
       <div class="filters">
         <div class="button-group" data-filter-group="time">
           <h4>COOKING TIME</h4>
@@ -228,10 +228,23 @@
           <button class="button" data-filter=".drink">&rarr; drink</button>
           <button class="button" data-filter=".sauce">&rarr; topping</button>
         </div>
+
+        <div class="button-group" data-filter-group="calories">
+          <h4>CALORIES</h4>
+          <button class="button is-checked" data-filter="">don't care</button>
+          <button class="button" data-filter=".unknown">unknown</button>
+          <button class="button" data-filter=".100">&rarr; less than 100</button>
+          <button class="button" data-filter=".200">&rarr; less than 200</button>
+          <button class="button" data-filter=".300">&rarr; less than 300</button>
+          <button class="button" data-filter=".400">&rarr; less than 400</button>
+          <button class="button" data-filter=".500">&rarr; less than 500</button>
+          <button class="button" data-filter=".over">&rarr; over 500</button>
+        </div>
+
       </div>
     </div>
 
-    <div class="col-xs-3">
+    <div class="col-xs-4">
       <div class="filters">
 
         <div class="button-group" data-filter-group="mealprep">
@@ -244,32 +257,31 @@
 
         <div class="button-group" data-filter-group="equipment">
           <h4>SPECIAL EQUIPMENT</h4>
-          <button class="button is-checked" data-filter="">i have everything</button>
-          <button class="button" data-filter=".blender">&rarr; blender</button>
+          <button class="button is-checked" data-filter="">all</button>
+          <button class="button is-checked" data-filter="">none</button>
+          <button class="button" data-filter=".bl">&rarr; blender</button>
+          <button class="button" data-filter=".fry">&rarr; fryer</button>
           <button class="button" data-filter=".mixer">&rarr; mixer</button>
-          <button class="button" data-filter=".pressurecooker">&rarr; pressure cooker</button>
-          <button class="button" data-filter=".slowcooker">&rarr; slowcooker</button>
-          <button class="button" data-filter=".spiralizer">&rarr; spiralizer</button>
-          <button class="button" data-filter=".wafflemaker">&rarr; wafflemaker</button>
+          <button class="button" data-filter=".pr">&rarr; pressure cooker</button>
+          <button class="button" data-filter=".sl">&rarr; slow cooker</button>
+          <button class="button" data-filter=".spr">&rarr; spiralizer</button>
+          <button class="button" data-filter=".wf">&rarr; wafflemaker</button>
         </div>
 
       </div>
     </div>
 
-    <div class="col-xs-3">
+    <div class="col-xs-4">
       <div class="filters">
 
         <div class="button-group" data-filter-group="craving">
           <h4>CRAVING</h4>
           <button class="button is-checked" data-filter="">any</button>
-          <button class="button" data-filter=".sour">&rarr; complex</button>
           <button class="button" data-filter=".sweet">&rarr; sweet</button>
           <button class="button" data-filter=".salty">&rarr; salty</button>
           <button class="button" data-filter=".spicy">&rarr; spicy</button>
           <button class="button" data-filter=".sour">&rarr; sour</button>
         </div>
-
-
 
         <div class="button-group" data-filter-group="diet">
           <h4>DIET</h4>
@@ -278,24 +290,6 @@
           <button class="button" data-filter=".veg">&rarr; vegetarian</button>
           <button class="button" data-filter=".fish">&rarr; contains fish</button>
           <button class="button" data-filter=".meat">&rarr; contains any meat</button>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="col-xs-3">
-      <div class="filters">
-
-        <div class="button-group" data-filter-group="calories">
-          <h4>CALORIES</h4>
-          <button class="button is-checked" data-filter="">don't care</button>
-          <button class="button" data-filter=".unknown">unknown</button>
-          <button class="button" data-filter=".100">&rarr; less than 100</button>
-          <button class="button" data-filter=".200">&rarr; less than 200</button>
-          <button class="button" data-filter=".300">&rarr; less than 300</button>
-          <button class="button" data-filter=".400">&rarr; less than 400</button>
-          <button class="button" data-filter=".500">&rarr; less than 500</button>
-          <button class="button" data-filter=".over">&rarr; over 500</button>
         </div>
 
         <div class="button-group" data-filter-group="carbs">
@@ -317,6 +311,7 @@
           <button class="button is-checked" data-filter="">don't care</button>
           <button class="button" data-filter=".highprotein">&rarr; all the protein</button>
         </div>
+
       </div>
     </div>
 
@@ -325,8 +320,41 @@
 
     <div class="grid">
 
+      <a href="https://www.thekitchn.com/south-indian-recipe-brown-rice-appam-165490">
+      <div class="grid-item overnight food no sweet salty complex 200 300 400 500 vegan veg highcarb">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>BROWN RICE APPAMS</h5>
+      </a>
+      south indian rice pancakes (great use of leftover rice); toppings can be customized with cashews and cilantro, coconut cream, fried egg, etc.</div>
+      </div>
+      </div>
+
+      <a href="https://www.purewow.com/recipes/Kale-Quiche-with-a-Cheddar-Rice-Crust">
+      <div class="grid-item 60 food no salty 200 300 400 500 veg highcarb highprotein">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>KALE QUICHE WITH CHEDDAR-RICE CRUST</h5>
+      </a>
+      great use of leftover rice</div>
+      </div>
+      </div>
+
+      <a href="https://www.purewow.com/recipes/quiche-gluten-free-sweet-potato-crust">
+      <div class="grid-item 60 food no salty 300 400 500 veg highprotein">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>QUICHE WITH SWEET POTATO CRUST</h5>
+      </a>
+      #</div>
+      </div>
+      </div>
+
       <a href="https://i.gyazo.com/e9dbc15b1ff49e6e5959b4fb0fc778e3.png">
-      <div class="grid-item 10 30 60 sauce yes salty 100 200 300 400 500 fish highprotein none">
+      <div class="grid-item 10 30 60 sauce yes salty 100 200 300 400 500 fish highprotein">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -336,8 +364,41 @@
       </div>
       </div>
 
+      <a href="https://www.howsweeteats.com/2015/12/fontina-roasted-garlic-and-goat-cheese-arancini/">
+      <div class="grid-item longer food yes otg salty 500 veg highcarb highfat fry">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>GARLIC AND GOAT CHEESE ARANCINI</h5>
+      </a>
+      great use of leftover rice/risotto</div>
+      </div>
+      </div>
+
+      <a href="http://freetexthost.com/6zf1mrl5n3">
+      <div class="grid-item 30 60 food yes salty 400 500 vegan veg highcarb">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>TOFU NOODLE STIR-FRY</h5>
+      </a>
+      veggies are customizable</div>
+      </div>
+      </div>
+
+      <a href="https://i.gyazo.com/0ff8559196ae9e7607f1a834abd52856.png">
+      <div class="grid-item 60 food yes otg sweet 200 300 400 500 veg highcarb lowfat highprotein">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>PEANUT BUTTER BANANA PROTEIN BREAD</h5>
+      </a>
+      can sub regular eggs for egg whites</div>
+      </div>
+      </div>
+
       <a href="https://web.archive.org/web/20170613000927/http://www.alldelicious.com/recipe/herb-almond-and-pumpkin-seed-pesto">
-      <div class="grid-item 10 30 60 sauce yes salty 200 300 400 500 veg lowcarb highfat blender">
+      <div class="grid-item 10 30 60 sauce yes salty 200 300 400 500 veg lowcarb highfat bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -348,7 +409,7 @@
       </div>
 
       <a href="https://www.foodbymaria.com/2017/04/17/grandmas-25-minute-pasta-sauce/">
-      <div class="grid-item 10 30 60 sauce yes sweet spicy complex unknown vegan veg highcarb blender">
+      <div class="grid-item 10 30 60 sauce yes sweet spicy complex unknown vegan veg highcarb bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -359,7 +420,7 @@
       </div>
 
       <a href="https://web.archive.org/web/20170613001735/http://www.alldelicious.com/recipe/cashew-pesto">
-      <div class="grid-item 10 30 60 sauce yes salty 200 300 400 500 veg highcarb highfat blender">
+      <div class="grid-item 10 30 60 sauce yes salty 200 300 400 500 veg highcarb highfat bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -369,8 +430,85 @@
       </div>
       </div>
 
+      <a href="https://i.gyazo.com/b7bb44e4a003dbe447b26ab653716bb9.jpg">
+      <div class="grid-item 60 food sauce yes salty complex 400 500 veg highcarb lowfat">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>SUMAC CARROT & LENTIL SALAD</h5>
+      </a>
+      pretty complex ingredients</div>
+      </div>
+      </div>
+
+      <a href="http://freetexthost.com/s3bzo1qcwv">
+      <div class="grid-item 10 30 60 food yes sweet salty complex 300 400 500 veg lowfat highprotein">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>BEAN AND CORN LUNCH SALAD</h5>
+      </a>
+      #</div>
+      </div>
+      </div>
+
+      <a href="https://www.reddit.com/r/vegan1200isplenty/comments/6oefar/350cal_breakfast_with_chihuahua_for_scale_p22c42f8/">
+      <div class="grid-item 30 60 food no salty 300 400 500 vegan veg lowfat highprotein">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>TOFU KALE SCRAMBLE WITH BBQ REFRIED BEANS</h5>
+      </a>
+      #</div>
+      </div>
+      </div>
+
+      <a href="https://i.gyazo.com/6ae9430f27d3bfbd8478579487b4b5e8.png">
+      <div class="grid-item 30 60 food drink yes otg sweet 300 400 500 vegan veg highcarb bl">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>CHIA SEED SMOOTHIE/PUDDING</h5>
+      </a>
+      ingredients: 1/2 cup chia seeds, 2 cups almond milk, 2 bananas, 1/2 cup blueberries, 4 pitted dates, 1/2 tsp cinnamon</div>
+      </div>
+      </div>
+
+      <a href="https://slice.seriouseats.com/2014/01/leftover-pizza-waffle-iron-delicious-crispy-gooey-cheese-stuffed-snack.html">
+      <div class="grid-item 10 30 60 food yes no otg salty 300 400 500 vegan veg meat highcarb highfat wf">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>WAFFLE IRON PIZZA</h5>
+      </a>
+      make your leftover or frozen pizza into waffles!</div>
+      </div>
+      </div>
+
+      <a href="https://www.thekitchn.com/recipe-oregon-summer-panino-si-148436">
+      <div class="grid-item 10/30/60/longer/overnight food no salty complex 500 veg highfat wf">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>OREGON SUMMER PANINO</h5>
+      </a>
+      delicious veggie-filled grilled cheese</div>
+      </div>
+      </div>
+
+      <a href="https://www.yellowblissroad.com/egg-cheese-hash-brown-waffles-giveaway/">
+      <div class="grid-item 30 food yes otg salty 300 400 500 veg highcarb wf">
+      <figure><img src="/thumbs/placeholder.png"></figure>
+      <div class="content">
+      <div class="name">
+      <h5>EGG & CHEESE HASH BROWN WAFFLES</h5>
+      </a>
+      #</div>
+      </div>
+      </div>
+
       <a href="https://maybeiwill.com/3-healthy-tuna-recipes-that-will-rock/">
-      <div class="grid-item 10 30 60 food yes otg salty 200 300 400 500 fish lowcarb lowfat highprotein none">
+      <div class="grid-item 10 30 60 food yes otg salty 200 300 400 500 fish lowcarb lowfat highprotein">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -381,7 +519,7 @@
       </div>
 
       <a href="https://maybeiwill.com/3-healthy-tuna-recipes-that-will-rock/">
-      <div class="grid-item 10 30 60 food yes salty 300 400 500 fish lowcarb highfat highprotein none">
+      <div class="grid-item 10 30 60 food yes salty 300 400 500 fish lowcarb highfat highprotein">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -392,7 +530,7 @@
       </div>
 
       <a href="https://maybeiwill.com/3-healthy-tuna-recipes-that-will-rock/">
-      <div class="grid-item 10 30 60 sauce yes salty 100 200 300 400 500 fish lowcarb lowfat highprotein none">
+      <div class="grid-item 10 30 60 sauce yes salty 100 200 300 400 500 fish lowcarb lowfat highprotein">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -403,7 +541,7 @@
       </div>
 
       <a href="##">
-      <div class="grid-item overnight sauce yes salty unknown vegan veg none slowcooker pressurecooker">
+      <div class="grid-item overnight sauce yes salty unknown vegan veg sl pr">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -414,7 +552,7 @@
       </div>
 
       <a href="https://i.gyazo.com/ae73fab516cca61e5e9b76e581c26473.png">
-      <div class="grid-item 60 food no salty unknown vegan veg highcarb highprotein none pressurecooker">
+      <div class="grid-item 60 food no salty unknown vegan veg highcarb highprotein pr">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -425,7 +563,7 @@
       </div>
 
       <a href="https://www.buzzfeed.com/alixtraeger/this-lighter-alfredo-sauce-is-made-with-cauliflower-and-its">
-      <div class="grid-item 30 60 sauce no salty 200 300 400 500 veg blender">
+      <div class="grid-item 30 60 sauce no salty 200 300 400 500 veg bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -436,7 +574,7 @@
       </div>
 
       <a href="https://minimalistbaker.com/easy-red-salsa/">
-      <div class="grid-item 10 30 60 sauce yes salty spicy sour 100 200 300 400 500 vegan veg highcarb blender">
+      <div class="grid-item 10 30 60 sauce yes salty spicy sour 100 200 300 400 500 vegan veg highcarb bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -458,7 +596,7 @@
       </div>
 
       <a href="https://i.gyazo.com/3c22078a35ed444125e5fab5b10569ea.png">
-      <div class="grid-item 10 30 60 food drink yes otg sweet 300 400 500 vegan veg highprotein blender">
+      <div class="grid-item 10 30 60 food drink yes otg sweet 300 400 500 vegan veg highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -469,7 +607,7 @@
       </div>
 
       <a href="https://i.gyazo.com/112da11bf77655fe9d07dff3b25c401c.png">
-      <div class="grid-item 10 30 60 drink yes otg sweet 200 300 400 500 veg lowfat highfat highprotein blender">
+      <div class="grid-item 10 30 60 drink yes otg sweet 200 300 400 500 veg lowfat highfat highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -480,7 +618,7 @@
       </div>
 
       <a href="https://i.gyazo.com/b594d9769f592482b033ed4ffdada3d4.png">
-      <div class="grid-item 10 drink yes otg sweet sour 100 200 300 400 500 vegan veg highcarb highprotein blender">
+      <div class="grid-item 10 drink yes otg sweet sour 100 200 300 400 500 vegan veg highcarb highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -491,7 +629,7 @@
       </div>
 
       <a href="http://www.leefromamerica.com/blog/2017/4/3/my-classic-cauliflower-blueberry-smoothie">
-      <div class="grid-item 30 drink no sweet 300 400 500 vegan veg highprotein blender">
+      <div class="grid-item 30 drink no sweet 300 400 500 vegan veg highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -502,7 +640,7 @@
       </div>
 
       <a href="http://www.leefromamerica.com/blog/2017/1/25/4-bananaless-smoothie-recipe-ideas">
-      <div class="grid-item 10 30 60 drink yes otg sweet 100 200 300 400 500 vegan veg highprotein blender">
+      <div class="grid-item 10 30 60 drink yes otg sweet 100 200 300 400 500 vegan veg highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -513,7 +651,7 @@
       </div>
 
       <a href="http://www.leefromamerica.com/blog/2016/7/7/meal-prepping-101">
-      <div class="grid-item 60 longer food yes sweet salty complex unknown vegan veg blender spiralizer">
+      <div class="grid-item 60 longer food yes sweet salty complex unknown vegan veg bl spr">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -524,7 +662,7 @@
       </div>
 
       <a href="http://www.leefromamerica.com/blog/2016/5/27/healthy-cookie-dough">
-      <div class="grid-item 30 60 food sauce yes sweet 300 400 500 vegan veg highprotein blender">
+      <div class="grid-item 30 60 food sauce yes sweet 300 400 500 vegan veg highprotein bl">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
@@ -640,36 +778,36 @@
       <div class="name">
       <h5>OVERNIGHT OATS</h5>
       </a>
-      1. banana bread<br />2. pina colada</br />3. raspberries 'n cream<br />4. apple cinnamon<br />5. <a href="https://chocolatecoveredkatie.com/2016/04/07/chocolate-overnight-oats-brownie-batter/">brownie batter chocolate</a></div>
+      very customizable<br />1. banana bread<br />2. pina colada</br />3. raspberries 'n cream<br />4. apple cinnamon<br />5. <a href="https://chocolatecoveredkatie.com/2016/04/07/chocolate-overnight-oats-brownie-batter/">brownie batter chocolate</a><br /><a href="https://i.gyazo.com/765e78feee5339a16e0a5052f8f044c8.png">banana</a></div>
       </div>
       </div>
 
-      <a href="#">
-      <div class="grid-item 10/30/60/longer/overnight food/drink/sauce yes/no/otg sweet/salty/spicy/sour/complex 100-500 vegan/veg/fish/meat low/highcarb low/highfat highprotein? blender/wafflemaker/mixer/slowcooker/pressurecooker/spiralizer">
+      <a href="https://i.gyazo.com/90bb97e4558cb8aa26b5d32d334aeed0.png">
+      <div class="grid-item 30 60 food yes otg sweet 300 400 500 vegan veg lowcarb highfat">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
-      <h5>#</h5>
+      <h5>BAKED MUESLI</h5>
       </a>
-      #</div>
+      another similar recipe: muesli <a href="https://i.gyazo.com/11dd8ff0a9eb45c23d45b06ff20f4f38.png">granola</a></div>
       </div>
       </div>
 
-      <a href="#">
-      <div class="grid-item 10/30/60/longer/overnight food/drink/sauce yes/no/otg sweet/salty/spicy/sour/complex 100-500 vegan/veg/fish/meat low/highcarb low/highfat highprotein? blender/wafflemaker/mixer/slowcooker/pressurecooker/spiralizer">
+      <a href="https://i.gyazo.com/f2b37455434388e25c3568a00a220f02.png">
+      <div class="grid-item overnight food yes sweet 400 500 vegan veg highcarb lowfat">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
-      <h5>#</h5>
+      <h5>ORIGINAL MUESLI</h5>
       </a>
-      #</div>
+      very customizable; see <a href="http://freetexthost.com/suycnuuw24">variations</a></div>
       </div>
       </div>
 
 
 <!--
       <a href="#">
-      <div class="grid-item 10/30/60/longer/overnight food/drink/sauce yes/no/otg sweet/salty/spicy/sour/complex 100-500 vegan/veg/fish/meat low/highcarb low/highfat highprotein? blender/wafflemaker/mixer/slowcooker/pressurecooker/spiralizer">
+      <div class="grid-item 10/30/60/longer/overnight food/drink/sauce yes/no/otg sweet/salty/spicy/sour/complex 100-500 vegan/veg/fish/meat low/highcarb low/highfat highprotein? n/bl/wf/mx/sl/pr/spr/fry">
       <figure><img src="/thumbs/placeholder.png"></figure>
       <div class="content">
       <div class="name">
