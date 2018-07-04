@@ -206,9 +206,9 @@
   <div class="row boxed-in">
 
     <p>FYI, a meal counts as "good for on-the-go" if it's easy to store in a lunchbox, doesn't need heating up, and can be eating without utensils!</p>
-          <h3>FILTER BY...</h3>
+    <h3>FILTER BY...</h3>
 
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <div class="filters">
         <div class="button-group" data-filter-group="time">
           <h4>COOKING TIME</h4>
@@ -230,7 +230,7 @@
       </div>
     </div>
 
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <div class="filters">
 
         <div class="button-group" data-filter-group="mealprep">
@@ -255,9 +255,67 @@
       </div>
     </div>
 
-    <div class="col-xs-4">
+    <div class="col-xs-3">
       <div class="filters">
-        data
+
+        <div class="button-group" data-filter-group="craving">
+          <h4>CRAVING</h4>
+          <button class="button is-checked" data-filter="">any</button>
+          <button class="button" data-filter=".sour">&rarr; complex</button>
+          <button class="button" data-filter=".sweet">&rarr; sweet</button>
+          <button class="button" data-filter=".salty">&rarr; salty</button>
+          <button class="button" data-filter=".spicy">&rarr; spicy</button>
+          <button class="button" data-filter=".sour">&rarr; sour</button>
+        </div>
+
+
+
+        <div class="button-group" data-filter-group="diet">
+          <h4>DIET</h4>
+          <button class="button is-checked" data-filter="">all</button>
+          <button class="button" data-filter=".vegan">&rarr; vegan</button>
+          <button class="button" data-filter=".veg">&rarr; vegetarian</button>
+          <button class="button" data-filter=".fish">&rarr; contains fish</button>
+          <button class="button" data-filter=".meat">&rarr; contains any meat</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col-xs-3">
+      <div class="filters">
+
+        <div class="button-group" data-filter-group="calories">
+          <h4>CALORIES</h4>
+          <button class="button is-checked" data-filter="">don't care</button>
+          <button class="button" data-filter=".unknown">unknown</button>
+          <button class="button" data-filter=".100">&rarr; less than 100</button>
+          <button class="button" data-filter=".200">&rarr; less than 200</button>
+          <button class="button" data-filter=".300">&rarr; less than 300</button>
+          <button class="button" data-filter=".400">&rarr; less than 400</button>
+          <button class="button" data-filter=".500">&rarr; less than 500</button>
+          <button class="button" data-filter=".over">&rarr; over 500</button>
+        </div>
+
+        <div class="button-group" data-filter-group="carbs">
+          <h4>CARBS</h4>
+          <button class="button is-checked" data-filter="">don't care</button>
+          <button class="button" data-filter=".lowcarb">&rarr; low-carb</button>
+          <button class="button" data-filter=".highcarb">&rarr; all the carbs</button>
+        </div>
+
+        <div class="button-group" data-filter-group="fats">
+          <h4>FATS</h4>
+          <button class="button is-checked" data-filter="">don't care</button>
+          <button class="button" data-filter=".lowfat">&rarr; low-fat</button>
+          <button class="button" data-filter=".highfat">&rarr; high-fat</button>
+        </div>
+
+        <div class="button-group" data-filter-group="proteins">
+          <h4>PROTEINS</h4>
+          <button class="button is-checked" data-filter="">don't care</button>
+          <button class="button" data-filter=".highprotein">&rarr; all the protein</button>
+        </div>
       </div>
     </div>
 
@@ -269,56 +327,9 @@
 
 
 
-      <div class="button-group" data-filter-group="craving">
-        <h4>CRAVING</h4>
-        <button class="button is-checked" data-filter="">any</button>
-        <button class="button" data-filter=".sour">&rarr; complex</button>
-        <button class="button" data-filter=".sweet">&rarr; sweet</button>
-        <button class="button" data-filter=".salty">&rarr; salty</button>
-        <button class="button" data-filter=".spicy">&rarr; spicy</button>
-        <button class="button" data-filter=".sour">&rarr; sour</button>
-      </div>
 
-      <div class="button-group" data-filter-group="calories">
-        <h4>CALORIES</h4>
-        <button class="button is-checked" data-filter="">don't care</button>
-        <button class="button" data-filter=".unknown">unknown</button>
-        <button class="button" data-filter=".100">&rarr; less than 100</button>
-        <button class="button" data-filter=".200">&rarr; less than 200</button>
-        <button class="button" data-filter=".300">&rarr; less than 300</button>
-        <button class="button" data-filter=".400">&rarr; less than 400</button>
-        <button class="button" data-filter=".500">&rarr; less than 500</button>
-        <button class="button" data-filter=".over">&rarr; over 500</button>
-      </div>
 
-      <div class="button-group" data-filter-group="diet">
-        <h4>DIET</h4>
-        <button class="button is-checked" data-filter="">all</button>
-        <button class="button" data-filter=".vegan">&rarr; vegan</button>
-        <button class="button" data-filter=".veg">&rarr; vegetarian</button>
-        <button class="button" data-filter=".fish">&rarr; contains fish</button>
-        <button class="button" data-filter=".meat">&rarr; contains any meat</button>
-      </div>
 
-      <div class="button-group" data-filter-group="carbs">
-        <h4>CARBS</h4>
-        <button class="button is-checked" data-filter="">don't care</button>
-        <button class="button" data-filter=".lowcarb">&rarr; low-carb</button>
-        <button class="button" data-filter=".highcarb">&rarr; all the carbs</button>
-      </div>
-
-      <div class="button-group" data-filter-group="fats">
-        <h4>FATS</h4>
-        <button class="button is-checked" data-filter="">don't care</button>
-        <button class="button" data-filter=".lowfat">&rarr; low-fat</button>
-        <button class="button" data-filter=".highfat">&rarr; high-fat</button>
-      </div>
-
-      <div class="button-group" data-filter-group="proteins">
-        <h4>PROTEINS</h4>
-        <button class="button is-checked" data-filter="">don't care</button>
-        <button class="button" data-filter=".highprotein">&rarr; all the protein</button>
-      </div>
 
 
 
