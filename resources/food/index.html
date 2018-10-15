@@ -18,6 +18,27 @@
   <!-- up to here -->
 
 
+  <script>
+  function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+          } else {
+              li[i].style.display = "none";
+          }
+      }
+  }
+  </script>
+
 
   <!-- filter scripts -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -319,7 +340,7 @@
       <div class="grid">
 
         <a href="https://www.closetcooking.com/2012/09/grilled-eggplant-and-roasted-red-pepper.html">
-        <div class="grid-item 30 food sauce yes otg savoury 500 veg highcarb gr">
+        <div class="grid-item 30 food sauce yes otg savoury 500 veg highcarb gr" id="myUL">
         <figure><img src="/thumbs/placeholder.png"></figure>
         <div class="content">
         <div class="name">
@@ -330,7 +351,7 @@
         </div>
 
         <a href="https://www.rd.com/health/healthy-eating/cooking-with-greek-yogurt/">
-        <div class="grid-item 60 food yes savoury n veg lowcarb   200 300 400 500  highprotein">
+        <div class="grid-item 60 food yes savoury n veg lowcarb   200 300 400 500  highprotein" id="myUL">
         <figure><img src="/resources/food/florentinefrittata.jpg"></figure>
         <div class="content">
         <div class="name">
@@ -341,7 +362,7 @@
         </div>
 
         <a href="https://www.rd.com/health/healthy-eating/cooking-with-greek-yogurt/">
-        <div class="grid-item 60 food yes savoury n fish meat highcarb lowfat 400 500  highprotein">
+        <div class="grid-item 60 food yes savoury n fish meat highcarb lowfat 400 500  highprotein" id="myUL">
         <figure><img src="/thumbs/placeholder.png"></figure>
         <div class="content">
         <div class="name">
