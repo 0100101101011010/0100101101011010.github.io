@@ -28,7 +28,7 @@ blockquote {
 body {
   background-color: #eae7dc;
   color: #636261;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-size: 16px;
 }
 
@@ -44,32 +44,32 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-weight: 700;
 
 }
 
 h3 {
   font-size: 20px;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-weight: 700;
 }
 
 h4 {
   font-size: 18px;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-weight: 700;
 }
 
 h5 {
   font-size: 16px;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-weight: 700;
 }
 
 h6 {
   font-size: 14px;
-  font-family: 'Exo', monospace;
+  font-family: 'Martel Sans', monospace;
   font-weight: 700;
 }
 
