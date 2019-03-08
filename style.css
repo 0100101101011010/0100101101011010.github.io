@@ -99,3 +99,28 @@ hr {
   width:90px;
 
 }
+
+
+
+/* the rest of this document is for any masonry pages (see https://www.bootply.com/118335) */
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+.masonryrow {
+ -moz-column-width: 18em;
+ -webkit-column-width: 18em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap:1em;
+
+}
+
+.masonryitem {
+ display: inline-block;
+ padding:  .25rem;
+ width:  100%;
+}
+
+.masonrywell {
+ position:relative;
+ display: block;
+}
