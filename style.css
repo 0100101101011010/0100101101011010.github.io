@@ -12,6 +12,11 @@ a:hover {
   /* border-bottom: none; */
 }
 
+.btn {
+
+  border-radius: 12px !important;
+}
+
 .boxed-in {
   padding-top: 30px;
   padding-bottom:30px;
