@@ -103,4 +103,11 @@ what are the steps for cloning?
 1. ligate insert into vector
 1. transform vector into cells using electroporation (most efficient) or CaCl2
 1. *screen for vector*. plate on tetracycline (since the PstI site is not located on the Tet resistance gene, the Tet resistance gene was not cleaved and thus successfully transformed cells will be Tet resistant, and will grow on the plate)
-1. *screen for insert*. create a replica plate containing ampicillin. now the cells containing insert (who have had their Amp resistance gene cleaved) will die on the ampicillin plate. compare the Amp and Tet plates. the colonies missing from the Amp plate are the ones containing the insert.
+1. *screen for insert*. create a replica plate containing ampicillin. now the cells containing insert (who have had their Amp resistance gene cleaved) will die on the ampicillin plate. compare the Amp and Tet plates. the colonies missing from the Amp plate are the ones containing the insert, and you can pick them off from the Tet plate for amplifying.
+
+### Double Digest vs Single Digest
+
+advantages of double digest:
+
+- self ligation
+- orientation
