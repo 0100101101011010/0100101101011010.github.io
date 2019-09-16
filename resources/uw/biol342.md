@@ -84,9 +84,15 @@ some low-copy number plasmids contain information to ensure they will be distrib
 #### features of all modern cloning vectors
 
 - origin of replication (eg. OriC in e. coli)
-- selectable marker (ampicillin resistance gene, etc.) OR screening marker (different from selectable)
+- selectable marker (ampicillin resistance gene, tetracycline, etc.) OR screening marker (galactosidase gene, etc.)
 - multiple cloning site (MCS)
 - small size
 - high copy number (this goes hand in hand with small size. if the size is big the cell will have a hard time getting the energy to maintain so many copies)
 
-#### example: 
+#### example: pBR322
+
+what is the best site to use on this plasmid if you are going to clone a DNA fragment into it?
+
+![pBR322 plasmid](/resources/uw/images/pbr322.jpg){:width="100%"}
+
+can choose PstI if you want to knock out the Amp resistance gene, or HindIII / BamHI / SalI if you want to knock out the Tet resistance gene
