@@ -95,4 +95,12 @@ what is the best site to use on this plasmid if you are going to clone a DNA fra
 
 ![pBR322 plasmid](/resources/uw/images/pbr322.jpg){:width="100%"}
 
-can choose PstI if you want to knock out the Amp resistance gene, or HindIII / BamHI / SalI if you want to knock out the Tet resistance gene
+can choose PstI if you want to knock out the Amp resistance gene, or HindIII / BamHI / SalI if you want to knock out the Tet resistance gene. don't knock out both genes (eg. PstI *and* HindIII) or you will not be able to select
+
+what are the steps for cloning?
+
+1. choose restriction site (let's go with PstI)
+1. ligate insert into vector
+1. transform vector into cells using electroporation (most efficient) or CaCl2
+1. *screen for vector*. plate on tetracycline (since the PstI site is not located on the Tet resistance gene, the Tet resistance gene was not cleaved and thus successfully transformed cells will be Tet resistant, and will grow on the plate)
+1. *screen for insert*. create a replica plate containing ampicillin. now the cells containing insert (who have had their Amp resistance gene cleaved) will die on the ampicillin plate. compare the Amp and Tet plates. the colonies missing from the Amp plate are the ones containing the insert.
