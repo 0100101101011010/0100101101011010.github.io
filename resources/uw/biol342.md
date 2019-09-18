@@ -109,5 +109,20 @@ what are the steps for cloning?
 
 advantages of double digest:
 
-- self ligation
-- orientation
+- prevent self ligation, increases transformation efficiency
+- orientation and directional cloning
+
+how to distinguish cells carrying self-ligated vectors from cells carrying desired DNA fragment:
+
+- design polymerase to vector sequence
+- run colony PCR
+
+pUC19 advantages:
+
+- multiple cloning site (MCS)
+  - lots of choice of sites
+  - helps prevent self-ligations
+  - facilitates directional cloning (can only go one way)
+- can do colour differentiation as well as antibiotic selection
+  - LacZ gene will either be disrupted
+- very small size, and very high copy number
