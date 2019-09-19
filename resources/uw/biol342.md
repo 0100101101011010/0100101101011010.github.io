@@ -30,6 +30,7 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
 - shine-dalgarno sequence exists in both, but only has an impact on translation (mRNA → protein)
 - codons are only ever in the CDS / ORF
   - eg. cannot call the nucleotides in the SD a codon, because that region is not translated
+  - start codon is included in ORF; stop codon is not included in ORF
 
 ## Set 2
 
