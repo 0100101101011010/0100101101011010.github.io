@@ -127,3 +127,15 @@ pUC19 advantages:
 - can do colour differentiation as well as antibiotic selection
   - LacZ gene will either be disrupted
 - very small size, and very high copy number
+
+### W3 Q3
+
+- purify the protein (grow lots of fungus, centrifuge and purify) and find its sequence
+  - amino acid degradation
+- can't make a cDNA library because you want the introns, so make a *genomic* library
+- hybridize a probe to the gene (made using the sequence determined from the purified protein)
+
+### W3 Q4
+
+- cannot use PCR because you would have to do it for waaaay too many colonies, no time for that!
+-
