@@ -1,6 +1,6 @@
 # BIOL 342
 
-## Review
+## Lecture 1: Review
 
 monocistronic = only 1 gene in the mRNA
 
@@ -23,6 +23,8 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
 
 - often, Met/fMet is removed
 
+## Lecture 2: Review
+
 ### STRUCTURAL DIFFERENCE BETWEEN DNA AND mRNA
 
 - mRNA does not have Promoter or Terminator (those belong to DNA only)—well, part of the Terminator remains, but not the entire thing
@@ -32,7 +34,10 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
   - eg. cannot call the nucleotides in the SD a codon, because that region is not translated
   - start codon is included in ORF; stop codon is not included in ORF
 
-## Set 2
+### ORIGIN OF REPLICATION
+
+- eukaryotes have much bigger genomes, so require multiple origins of replication to replicate DNA in a timely manner
+- bacteria can do with just one origin
 
 ### RFLP Analysis
 
