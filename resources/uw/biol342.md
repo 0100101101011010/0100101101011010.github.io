@@ -41,6 +41,16 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
 
 ## Lecture 3:
 
+**important!!** bacteria used as host cells for vectors must be *defective* in the restriction endonuclease for the cut site you selected. otherwise, once you clone an insert-containing vector into the cell, it would just recognize that site and cut it up, destroying the vector you worked so hard on.
+
+### CUTTING DNA
+
+- restriction endonucleases have the advantage because they cut at precise, predetermined sites, and they produce hanging ends
+- mechanical methods of cutting DNA are more random: hard to reproduce, hard to control, produces blunt ends
+  - sonicate (shear it)
+  - glass beads (bead beater)
+  - small needle
+
 ### RFLP Analysis
 
 - for finding genetic differences between *closely related strains*
