@@ -39,6 +39,8 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
 - eukaryotes have much bigger genomes, so require multiple origins of replication to replicate DNA in a timely manner
 - bacteria can do with just one origin
 
+## Lecture 3:
+
 ### RFLP Analysis
 
 - for finding genetic differences between *closely related strains*
