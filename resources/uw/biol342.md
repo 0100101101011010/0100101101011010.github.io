@@ -51,6 +51,8 @@ polycistronic mRNA is not an operon because there is no control (no operator pre
   - glass beads (bead beater)
   - small needle
 
+## Lecture 4:
+
 ### RFLP Analysis
 
 - for finding genetic differences between *closely related strains*
@@ -75,7 +77,7 @@ possibilities:
 
 in image above:
 
-- B and C are likely different from D, E F
+- B and C are likely different from D, E, F
 - D and F are likely different from E
 - E is more similar to F than D
 
