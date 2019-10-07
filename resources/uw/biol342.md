@@ -147,14 +147,67 @@ pUC19 advantages:
   - LacZ gene will either be disrupted
 - very small size, and very high copy number
 
+## Lecture 9
+
 ### W3 Q3
 
-- purify the protein (grow lots of fungus, centrifuge and purify) and find its sequence
+1. purify the protein (grow lots of fungus, centrifuge and purify) and find its sequence
   - amino acid degradation
-- can't make a cDNA library because you want the introns, so make a *genomic* library
-- hybridize a probe to the gene (made using the sequence determined from the purified protein)
+  - immunoscreening (use antibody, needs lots of protein to work)
+  - substrate screening (if your host cells for the library can express the protein, and the protein produces a visible effect)
+1. make a *genomic* library
+  - can't make a cDNA library because you want both the exons *and* introns (since fungi are eukaryotic), not to mention you also want the promoter, terminator, +1 site, start and stop codons, etc.
+1. find the gene of interest from the library (2 ways):
+  1. hybridize a probe to the gene (made using the sequence determined from the purified protein)
 
 ### W3 Q4
 
-- cannot use PCR because you would have to do it for waaaay too many colonies, no time for that!
--
+the zebra protein could not be expressed in the host e. coli because:
+
+- the eukaryotic promoter wouldn't be recognized by the bacterial host → no mRNA transcript is even produced
+- even if the insert is added to an existing promoter on the vector, there is no shine-dalgarno sequence for initiating translation → no protein is produced
+- the eukaryotic promoter sequence and the 5' UTR would be translated into the final protein, resulting in either an out-of-frame translation or a protein with additional amino acids attached
+
+cannot use PCR because you would have to do it for waaaay too many colonies, no time for that!
+
+so, can only use hybridization with probe
+
+### Chemical Synthesis of DNA
+
+in the lab, not natural
+
+#### Phosphoramidite Method
+
+only works for synthesizing small genes (<120 bp)
+
+1. start with linkage of a spacer chain to a solid support (often glass or silicon bead) to prevent the growing chain from being washed away
+1. synthesize DNA in the 3' to 5' direction (adds bases to the 5' carbon of the sugar on the 5' end)
+  - exact opposite of natural DNA synthesis
+1. before adding the next nucleoside, remove DMT, leaving an exposed 5' OH
+  - low efficiency... lots of 5' OH groups remain unreacted
+1. block off all unreacted 5' OH groups
+  - otherwise, you'll end up with incorrectly-sequenced DNA (that have missing bases)
+  - capped using acetylation
+  - these capped 5' OH groups ensure that the chain they are on does not progress to the next addition
+1. synthesize each strand of the DNA helix separately, then anneal them
+
+coupling efficiency: how many of the chains will be full-length (not capped off prematurely)
+
+- (% efficiency of each cycle)^(number of bp in the sequence) = % of chains formed that will be full-length
+
+eg. for a 20-unit DNA sequence (ie. 20-mer) with a 99% coupling efficiency at each cycle:
+
+- 0.99^20 × 100%
+- = 82% yield of full-length chains
+
+can only make chains of ~120 bp (50% of the chains formed will be full-length) because of the low efficiency; diminishing returns
+
+#### Modular DNA Synthesis
+
+for larger genes that can't be synthesized in one go by phosphoramidite method
+
+synthesize fragments of the gene, each at <120 bp, designed so that each
+
+problem: you can end up with a lot of false matches (fragments joining in the wrong order), so have to sequence the gene after obtaining product
+
+#### PCR
