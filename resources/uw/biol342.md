@@ -206,8 +206,11 @@ can only make chains of ~120 bp (50% of the chains formed will be full-length) b
 
 for larger genes that can't be synthesized in one go by phosphoramidite method
 
-synthesize fragments of the gene, each at <120 bp, designed so that each
+1. synthesize modular fragments of the gene using phosphoramidite method, each at <120 bp, designed so that each one has complementary ends with the next fragment
+1. anneal fragments
 
 problem: you can end up with a lot of false matches (fragments joining in the wrong order), so have to sequence the gene after obtaining product
 
 #### PCR
+
+still has the issue of incorrectly-ordered fragments, but reduces this risk because you can *control* the temperature, preventing many of the side annealings
