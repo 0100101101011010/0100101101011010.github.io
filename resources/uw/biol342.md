@@ -187,7 +187,7 @@ only works for synthesizing small genes (<120 bp)
   - low efficiency... lots of 5' OH groups remain unreacted
 1. block off all unreacted 5' OH groups
   - otherwise, you'll end up with incorrectly-sequenced DNA (that have missing bases)
-  - capped using acetylation
+  - capped using acetylation (ends capped with DMT will not be acetylated, thus are protected and can go on to have more bases added)
   - these capped 5' OH groups ensure that the chain they are on does not progress to the next addition
 1. synthesize each strand of the DNA helix separately, then anneal them
 
@@ -214,3 +214,7 @@ problem: you can end up with a lot of false matches (fragments joining in the wr
 #### PCR
 
 still has the issue of incorrectly-ordered fragments, but reduces this risk because you can *control* the temperature, preventing many of the side annealings
+
+linker = short, blunt-ended double-ended DNA fragment with palindromic strands that contain a recognition site
+
+- when it is ligated into your DNA fragment, then digest, you'll get sticky ends!
